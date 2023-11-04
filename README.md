@@ -9,7 +9,7 @@
 | Thái Thu Huyền     | 24A4042598   | Nhóm trưởng    |                                            
 | Nguyễn Thị Hà Thu  | 24A4042424   | Thành viên     |                                          
 | Nguyễn Thị 
- Thu Hường           | 24A4042425   | Thành viên     | 
+ Thu Hường           | 24A4043057   | Thành viên     | 
 | Vũ Thị Thương      | 24A4042603   | Thành viên     |       
 
 ### 📘 Giới thiệu đề tài
