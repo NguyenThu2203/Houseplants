@@ -4,13 +4,13 @@
 
 ### 🚀 Danh sách thành viên
 
-| Họ và tên          | Mã sinh viên | Chức vụ        | 🔗 Link to GitHub profile                   |
-| ------------------ | ------------ | -------------- | -----------------------------------------   |
-| Thái Thu Huyền     | 24A4042598   | Nhóm trưởng    |                                             |
-| Nguyễn Thị Hà Thu  | 24A4042424   |                |                                             |
+| Họ và tên          | Mã sinh viên | Chức vụ        | 
+| ------------------ | ------------ | -------------- | 
+| Thái Thu Huyền     | 24A4042598   | Nhóm trưởng    |                                            
+| Nguyễn Thị Hà Thu  | 24A4042424   | Thành viên     |                                          
 | Nguyễn Thị 
-|Thu Hường           | 24A4042425   |                | [tuilaBao03](https://github.com/tuilaBao03) |
-| Vũ Thị Thương      | 24A4042603   |                | [xxelxt](https://github.com/xxelxt)         |
+ Thu Hường           | 24A4042425   | Thành viên     | 
+| Vũ Thị Thương      | 24A4042603   | Thành viên     |       
 
 ### 📘 Giới thiệu đề tài
 
