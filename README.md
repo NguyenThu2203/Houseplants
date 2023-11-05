@@ -14,7 +14,7 @@
 <p>Cây cảnh ngày càng được ưa chuộng bởi nhiều đối tượng, lứa tuổi khác nhau, có thể làm vật trang trí trong nhà, để bàn nhằm giảm ảnh hưởng của ánh sáng xanh đối với dân văn phòng, sinh viên, học sinh,.. giúp mang lại nguồn năng lượng tốt cho sức khỏe thể chất và tinh thần. Việc chăm sóc cây cảnh cũng giúp làm giảm stress, nâng cao tinh thần làm việc và học tập.</p> 
 Nhóm 5 chúng em lựa chọn đề tài này, với mong muốn thiết kế website bán cây cảnh bắt mắt, thu hút nhiều khách hàng mua hàng. 
 
-### Website dự kiến bao gồm: 
+## Website dự kiến bao gồm: 
 
 - **Trang chủ**: Gồm sản phẩm nổi bật, các banner thông tin khuyến mãi, các danh mục sản phẩm 
 
@@ -26,7 +26,7 @@ Nhóm 5 chúng em lựa chọn đề tài này, với mong muốn thiết kế w
 
 - **Trang bản tin - tin tức**: Một số bài viết về cây cảnh 
 
-### Website tham khảo
+## Website tham khảo
 
 - https://heyhorti.com/?fbclid=IwAR2CgFB0lz6e3fyRi5Tmumz6C7u3za5kWjGVs8pJNgvYuQeBrFfeSam4R74
  
