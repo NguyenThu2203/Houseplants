@@ -2,44 +2,28 @@
 
 ## Nhóm 7 - Thiết kế web (231IS19A01)
 
-### 🚀 Danh sách thành viên
+| Họ và tên           | Mã sinh viên | Chức vụ        | 
+| ------------------  | ------------ | -------------- | 
+| Thái Thu Huyền      | 24A4040596   | Nhóm trưởng    |                                            
+| Nguyễn Thị Hà Thu   | 24A4041443   | Thành viên     |                                          
+| Nguyễn Thị Thu Hường| 24A4043057   | Thành viên     | 
+| Vũ Thị Thương       | 24A4040521   | Thành viên     |       
 
-| Họ và tên          | Mã sinh viên | Chức vụ        | 
-| ------------------ | ------------ | -------------- | 
-| Thái Thu Huyền     | 24A4042598   | Nhóm trưởng    |                                            
-| Nguyễn Thị Hà Thu  | 24A4042424   | Thành viên     |                                          
-| Nguyễn Thị 
- Thu Hường           | 24A4043057   | Thành viên     | 
-| Vũ Thị Thương      | 24A4042603   | Thành viên     |       
+### Website dự kiến bao gồm: 
 
-### 📘 Giới thiệu đề tài
+- **Trang chủ**: Gồm sản phẩm nổi bật, các banner thông tin khuyến mãi, các danh mục sản phẩm 
 
-> ***depot (n) /depəʊ/: nơi lưu trữ, kho tàng***
+- **Trang các sản phẩm**: Bao gồm tất cả sản phẩm
 
-> ***culture depot: nơi lưu trữ, kho tàng văn hoá***
-
-***Culture Depot*** không chỉ là kho tàng văn hoá sách, mà còn lan toả niềm đam mê đọc sách tới giới trẻ và những người yêu sách.
-
-Lấy sách và văn hoá đọc làm trung tâm, đây là nơi bạn có thể tìm thấy những cuốn sách mình hứng thú, tìm thấy không gian để chia sẻ niềm đam mê, tìm thấy những sự kiện để kích thích sự đọc và yêu sách, giúp lan truyền giá trị về văn hóa đọc đến mọi người.
-
-### 📖 Mô tả
-
-- **Trang chủ (Home)**: Bao gồm thông tin nổi bật, sách và merchandise mới lên kệ, sự kiện sắp diễn ra, chia sẻ mới nhất từ độc giả
-
-- **Trang bán hàng (Store)**: Bạn đọc có thể duyệt qua danh sách sách đang bán cũng như sản phẩm đi kèm như sổ tay, túi tote,...
-
-- **Bảng tin (Feed)**: Cập nhật thông tin về những cuốn sách mới và cảm nhận của độc giả
+- **Trang sản phẩm theo danh mục**: Bao gồm các sản phẩm theo 1 danh mục(ví dụ: cây để bàn, cây trang trí, ...)
   
-- **Sự kiện (Events)**: Các sự kiện offline & online liên quan đến văn hóa đọc, giao lưu cùng tác giả, dịch giả
+- **Trang giới thiệu về cửa hàng**: Câu chuyện của tiệm
 
-- **Giới thiệu (About us)**: Giới thiệu về câu chuyện của chúng tôi
+- **Trang bản tin - tin tức**: Một số bài viết về cây cảnh 
 
-### 🌐 Website tham khảo
+### Website tham khảo
 
-- [Nhã Nam](https://nhanam.vn/)
+- https://heyhorti.com/?fbclid=IwAR2CgFB0lz6e3fyRi5Tmumz6C7u3za5kWjGVs8pJNgvYuQeBrFfeSam4R74
  
-- [Abebooks](https://www.abebooks.com/collections/cm_sp=TopNav-_-Advs-_-Collections)
+- https://www.thesill.com/?fbclid=IwAR3mXz8JRrkzpSi2ESPHplF3Qui7rxbFW4jpp-sGeYXiK1OKeud0AHzx5h8
  
-- [Fahasa](https://www.fahasa.com/)
- 
-- [Vinabook](https://www.vinabook.com/)
