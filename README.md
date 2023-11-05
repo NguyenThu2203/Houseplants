@@ -1,6 +1,6 @@
-# Đề tài: Xây dựng trang web bán cây xinh
+# Đề tài: Xây dựng Website bán cây xinh 
 
-## Nhóm 7 - Thiết kế web (231IS19A01)
+## Nhóm 5 - Thiết kế web (231IS19A01)
 
 | Họ và tên           | Mã sinh viên | Chức vụ        | 
 | ------------------  | ------------ | -------------- | 
@@ -8,6 +8,11 @@
 | Nguyễn Thị Hà Thu   | 24A4041443   | Thành viên     |                                          
 | Nguyễn Thị Thu Hường| 24A4043057   | Thành viên     | 
 | Vũ Thị Thương       | 24A4040521   | Thành viên     |       
+## Mô tả đề tài
+Ngoài giá trị thẩm mỹ, trang trí, thể hiện triết lý sống..., cây cảnh còn có lợi ích rất to lớn cho sức khỏe con người.
+Cây cảnh ngoài vai trò trang trí làm cảnh trong nhà còn có nhiều tác dụng phong thủy khác nhau, giúp duy trì, hoàn thiện nguồn sinh khí trong nhà, tạo ra môi trường sống hoàn hảo, thoải mái, tốt cho sức khỏe.
+Cây cảnh ngày càng được ưa chuộng bởi nhiều đối tượng, lứa tuổi khác nhau, có thể làm vật trang trí trong nhà, để bàn nhằm giảm ảnh hưởng của ánh sáng xanh đối với dân văn phòng, sinh viên, học sinh,.. giúp mang lại nguồn năng lượng tốt cho sức khỏe thể chất và tinh thần. Việc chăm sóc cây cảnh cũng giúp làm giảm stress, nâng cao tinh thần làm việc và học tập. 
+Nhóm 5 chúng em lựa chọn đề tài này, với mong muốn thiết kế website bán cây cảnh bắt mắt, thu hút nhiều khách hàng mua hàng. 
 
 ### Website dự kiến bao gồm: 
 
