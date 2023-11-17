@@ -18,17 +18,22 @@ Nhóm 5 chúng em lựa chọn đề tài này, với mong muốn thiết kế w
 
 - **Trang chủ**: Gồm sản phẩm nổi bật, các banner thông tin khuyến mãi, các danh mục sản phẩm 
 
-- **Trang các sản phẩm**: Bao gồm tất cả sản phẩm
+- **Trang tất cả sản phẩm**: Bao gồm tất cả sản phẩm
 
-- **Trang sản phẩm theo danh mục**: Bao gồm các sản phẩm theo 1 danh mục(ví dụ: cây để bàn, cây trang trí, ...)
+- **Trang chi tiết sản phẩm**: Câu chuyện của tiệm
+
+- **Trang chuyên mục**: Bao gồm các sản phẩm theo 1 danh mục(ví dụ: cây để bàn, cây trang trí, ...)
   
 - **Trang giới thiệu về cửa hàng**: Câu chuyện của tiệm
 
-- **Trang bản tin - tin tức**: Một số bài viết về cây cảnh 
+- **Trang bản tin - tin tức**: Một số bài viết về cây cảnh
+
 
 ## Website tham khảo
 
 - https://heyhorti.com/?fbclid=IwAR2CgFB0lz6e3fyRi5Tmumz6C7u3za5kWjGVs8pJNgvYuQeBrFfeSam4R74
  
 - https://www.thesill.com/?fbclid=IwAR3mXz8JRrkzpSi2ESPHplF3Qui7rxbFW4jpp-sGeYXiK1OKeud0AHzx5h8
+
+- https://www.thetreecenter.com/thuja-green-giant/
  
