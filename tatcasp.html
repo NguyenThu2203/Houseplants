@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Trang chủ</title>
+  <meta content ="" name="description">
+  <meta content="" name="keywords">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Favicons -->
+  <link href="https://media.istockphoto.com/id/1199462597/vi/vec-to/c%C3%A2y-x%C6%B0%C6%A1ng-r%E1%BB%93ng-d%E1%BB%85-th%C6%B0%C6%A1ng-trong-bi%E1%BB%83u-t%C6%B0%E1%BB%A3ng-nh%C3%A2n-v%E1%BA%ADt-pot-kawaii.jpg?s=1024x1024&w=is&k=20&c=olwz_w3R3-H2gkwAG0wwVsLmvzf2jZV96cM68tokdVs=" rel="icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.leanhduc.pro.vn/utilities/animation/shake-effect/style.css"/>
+
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+
+<body>
+   <!-- Giỏ hàng khi thêm sản phẩm -->
+   <div class="container d-flex">
+      <div class="TTgiohang"></div>
+      <div class="giohang">
+         <h1>Card</h1>
+         <ul class="listCard"></ul>
+         <div class="checkOut">
+            <div class="total">0</div>
+            <div class="closeShopping">Close</div>
+         </div>
+      </div>
+   </div>
+   
+
+   <div class="cursor"></div>
+  <div class="sticky-top">
+  <!-- ======= Header ======= -->
+  <!-- <header id="header" class="header fixed-top d-flex align-items-center"> -->
+    <div  class="container-fluid bgtop1" >   
+      <p class = "muahangdi">Mua hàng cùng chúng tớ đi...
+        <i class="fa-solid fa-seedling rung"></i>
+        <i class="fa-solid fa-seedling rung"></i>
+        <i class="fa-solid fa-seedling rung"></i>
+      </p>
+    </div>
+    <!-- Logo -->
+    <div class="container-fluid">
+      <div class="row">
+        <a href="index.html" class="text-center">
+          <img class = "text-center img-fluid" src="assets/img/logo2.png" alt="Logo LeafLife" width="150" height="100">
+        </a>
+      </div>
+    </div>
+    <div class="container d-flex align-items-center justify-content-between">
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#hero">Trang Chủ</a></li>
+          <li class="dropdown"><a href="#"><span>Sản Phẩm</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Cây Trang Trí</a></li>
+              <li><a href="#">Cây Ăn quả</a></li>
+              <li><a href="#">Cây Lá Kim</a></li>
+              <li><a href="#">Hoa Thân Thảo</a></li>
+              <li><a href="#">Hoa Thân Gỗ</a></li>
+              <li><a href="#">Hoa Leo</a></li>
+              <li class="dropdown"><a href="#"><span>Nổi bật</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Sản phẩm bán chạy</a></li>
+                  <li><a href="#">Sản phẩm mới nhất</a></li>
+                  <li><a href="#">Sản phẩm giảm giá</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#about">Về Chúng Tôi</a></li>
+          <li><a href="#menu">Bài Viết</a></li>
+          <li><a href="#events">Liên Hệ</a></li>
+        </ul>
+      </nav>
+      <div class="input-group timkiem">
+        <span class="input-group-text border border-0 bg-white" id="basic-addon2"><i class="fa-solid fa-magnifying-glass "></i></span>
+        <input type="text" class="form-control border border-0" placeholder="Tìm kiếm sản phẩm..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+    </div>
+    <svg class="svg-icon navbar-icon">
+      <use xlink:href="#retail-bag-1"> </use>
+    </svg>
+      <!-- .navbar -->
+    </div>
+  <!-- Hiên thị trên các thiết bị khác nhau -->
+  <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+  <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+  <!-- Kết thúc Header -->
+  </div>
+ <!-- BreadCrumbs -->
+ <div class="container">
+  <ol class="breadcrumb justify-content mb-0 pt-4 fs-6 bread">
+    <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+    <li class="breadcrumb-item">Sản phẩm</li>
+  </ol>
+</div>
+
+<!-- Thanh Sidebar -->
+<div class="container py-3 soluong">
+  <div class="row">
+    <div class="col-lg-3 col-sm-3">
+         <img src = "trangchu/logo2.png" width="300" height="130">
+         <p class = "text-center">Tiệm cây LeafLife luôn mong muốn mang đế trải nghiệm tốt nhất cho từng khách hàng khi mua sản phẩm.
+         "Hãy đến với LeafLife để cuộc sống tươi mát hơn!"
+         </p>
+         <br>
+      <p><strong>LỌC SẢN PHẨM THEO GIÁ</strong></p>
+      <div class="mb-3">
+        <input type="range" class="form-range locgia" min="0" max="5" step="0.5" id="customRange3">
+      </div>
+           <!-- range -->
+           <div id="priceRange" class="mb-3 noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr">
+            <div class="noUi-base">
+              <div class="noUi-connects">
+            <div class="noUi-connect" style="transform: translate(14.6259%, 0px) scale(0.510204, 1);">
+            </div>
+          </div>
+          <div class="noUi-origin" style="transform: translate(-85.3741%, 0px); z-index: 5;">
+            <div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="6.0" aria-valuemax="199.0" aria-valuenow="49.0" aria-valuetext="$49">
+              <div class="noUi-touch-area">
+            </div>
+          </div>
+        </div>
+        <div class="noUi-origin" style="transform: translate(-34.3537%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="49.0" aria-valuemax="300.0" aria-valuenow="199.0" aria-valuetext="$199">
+          <div class="noUi-touch-area">
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+   
+
+
+   <!-- Danh mục sản phẩm -->
+   
+        <div class="danhmuc">
+          <p><strong>DANH MỤC SẢN PHẨM</strong></p>
+          <ul class="nav nav-category" id="categoryCollapseMenu">
+            <!-- Cây xinh nhà LeafLife -->
+            <li class="nav-item border-bottom w-100">
+               <a href="#" class="nav-link collapsed text-muted" data-bs-toggle="collapse" data-bs-target="#categoryFlushOne" aria-expanded="false" aria-controls="categoryFlushOne">
+                  Cây xinh nhà LeafLife
+                  <i class="fa-solid fa-chevron-right icondanhmuc"></i>
+               </a>
+               <!-- accordion collapse -->
+               <div id="categoryFlushOne" class="accordion-collapse collapse" data-bs-parent="#categoryCollapseMenu">
+                  <div>
+                     <!-- nav -->
+                     <ul class="nav flex-column ms-3">
+                        <!-- nav item -->
+                        <li class="nav-item"><a href="#!" class="nav-link text-muted">Cây trang trí</a></li>
+                        <!-- nav item -->
+                        <li class="nav-item"><a href="#!" class="nav-link text-muted" >Cây ăn quả</a></li>
+                        <!-- nav item -->
+                        <li class="nav-item"><a href="#!" class="nav-link text-muted">Cây Lá kim</a></li>
+                     </ul>
+                  </div>
+                </div>
+            </li>
+            <!-- Hoa xinh nhà LeafLife -->
+            <li class="nav-item border-bottom w-100">
+              <a href="#" class="nav-link collapsed text-muted" data-bs-toggle="collapse" data-bs-target="#categoryFlushOne" aria-expanded="false" aria-controls="categoryFlushOne">
+                  Hoa xinh nhà LeafLife
+                 <i class="fa-solid fa-chevron-right"></i>
+              </a>
+              <!-- accordion collapse -->
+              <div id="categoryFlushOne" class="accordion-collapse collapse" data-bs-parent="#categoryCollapseMenu">
+                 <div>
+                    <!-- nav -->
+                    <ul class="nav flex-column ms-3">
+                       <!-- nav item -->
+                       <li class="nav-item"><a href="#!" class="nav-link text-muted">Hoa Thân Thảo</a></li>
+                       <!-- nav item -->
+                       <li class="nav-item"><a href="#!" class="nav-link text-muted" >Hoa Thân Gỗ</a></li>
+                       <!-- nav item -->
+                       <li class="nav-item"><a href="#!" class="nav-link text-muted">Hoa leo</a></li>
+                    </ul>
+                 </div>
+               </div>
+           </li>
+           <!-- Sản phẩm quà tặng -->
+           <li class="nav-item border-bottom w-100">
+            <a href="#" class="nav-link collapsed text-muted" data-bs-toggle="collapse" data-bs-target="#categoryFlushOne" aria-expanded="false" aria-controls="categoryFlushOne">
+              Sản phẩm HOT 
+               <i class="fa-solid fa-chevron-right icondanhmuc"></i>
+            </a>
+            <!-- accordion collapse -->
+            <div id="categoryFlushOne" class="accordion-collapse collapse" data-bs-parent="#categoryCollapseMenu">
+               <div>
+                  <!-- nav -->
+                  <ul class="nav flex-column ms-3">
+                     <!-- nav item -->
+                     <li class="nav-item"><a href="#!" class="nav-link text-muted">Cây Trang Trí</a></li>
+                     <!-- nav item -->
+                     <li class="nav-item"><a href="#!" class="nav-link text-muted" >Cây Ăn Quả</a></li>
+                     <!-- nav item -->
+                     <li class="nav-item"><a href="#!" class="nav-link text-muted">Cây Lá Kim</a></li>
+                  </ul>
+               </div>
+             </div>
+         </li>
+         <!-- Sản phẩm mới nhất -->
+         <li class="nav-item border-bottom w-100">
+          <a href="#" class="nav-link collapsed text-muted" data-bs-toggle="collapse" data-bs-target="#categoryFlushOne" aria-expanded="false" aria-controls="categoryFlushOne">
+             Sản phẩm MỚI
+             <i class="fa-solid fa-chevron-right"></i>
+          </a>
+          <!-- accordion collapse -->
+          <div id="categoryFlushOne" class="accordion-collapse collapse" data-bs-parent="#categoryCollapseMenu">
+             <div>
+                <!-- nav -->
+                <ul class="nav flex-column ms-3">
+                   <!-- nav item -->
+                   <li class="nav-item"><a href="#!" class="nav-link text-muted">Cây Trang Trí</a></li>
+                   <!-- nav item -->
+                   <li class="nav-item"><a href="#!" class="nav-link text-muted" >Cây Ăn quả</a></li>
+                   <!-- nav item -->
+                   <li class="nav-item"><a href="#!" class="nav-link text-muted">Cây Lá kim</a></li>
+                </ul>
+             </div>
+           </div>
+       </li>
+      </ul>
+   </div>
+
+
+   <br>
+   <p><strong>BÀI VIẾT MỚI NHẤT</strong></p>
+   <!-- Bài viết mới nhất -->
+   <div class="d-flex flex-column flex-md-row gap-4  align-items-center justify-content-center">
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+         <img src="trangchu/caylakim/CK_bunny.jpg" alt = "bài viết 1" width="32" height="32" class="rounded-circle flex-shrink-0">
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h6 class="mb-0">Cách trang trí cây đẹp</h6>
+              <p class="mb-0 opacity-75">Để mang lại không gian đẹp trong nhà thì chúng ta nên...</p>
+            </div>
+            <small class="opacity-50 text-nowrap">now</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+          <img src="trangchu/caylakim/CK_nortfolk.jpg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h6 class="mb-0">Tác dụng quan trọng của cây xanh</h6>
+              <p class="mb-0 opacity-75">Cây xanh có vai trò quan trọng như giảm stress, tăng chất lượng cuộc sống,...</p>
+            </div>
+            <small class="opacity-50 text-nowrap">3d</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+          <img src="trangchu/hoathanthao/Hoa tulip trắng/HT_hoatulip1.jpg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h6 class="mb-0">Ý nghĩa của các loài hoa</h6>
+              <p class="mb-0 opacity-75 ">Mỗi loài hoa đều mang một ý nghĩa riêng. Loài hoa như mang một thông diệp...</p>
+            </div>
+            <small class="opacity-50 text-nowrap">1w</small>
+          </div>
+        </a>
+      </div>
+    </div>
+</div>
+    <!-- Menu -->
+  <div class="col-lg-9 col-sm-9 col-md-12">
+      <!-- list icon -->
+      <div class="d-lg-flex justify-content-between align-items-center">
+         <div class="mb-3 mb-lg-0">
+            <p class="mb-0">
+               <span class="text-dark">60</span>
+               sản phẩm tìm thấy
+            </p>
+          </div>
+          <div class="ms-2 d-lg-none">
+            <a class="btn btn-outline-gray-400 text-muted" data-bs-toggle="offcanvas" href="#offcanvasCategory" role="button" aria-controls="offcanvasCategory">
+               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-filter me-2">
+                  <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+               </svg>
+               Lọc
+            </a>
+         </div>
+         <!-- icon -->
+         <div class="d-md-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center justify-content-between">
+               <div>
+                <!-- Thay đổi cách sắp xếp sản phẩm -->
+                  <a href="xepngang.html" class="text-muted me-3"><i class="bi bi-list-ul"></i></a>
+                  <a href="xep4.html" class="me-3 active"><i class="bi bi-grid"></i></a>
+                  <a href="tatcasp.html" class="me-3 text-muted"><i class="bi bi-grid-3x3-gap"></i></a>
+               </div>
+            </div>
+
+            <div class="d-flex mt-2 mt-lg-0">
+               <div class="me-2 flex-grow-1">
+                  <!-- select option -->
+                  <select class="form-select">
+                     <option selected="">Hiển thị: 12</option>
+                     <option value="10">Hiển thị: 9</option>
+                     <option value="10">Hiển thị: 6</option>
+                  </select>
+               </div>
+               <div>
+                  <!-- select option -->
+                  <select class="form-select">
+                     <option selected="">Sắp xếp: Tất cả</option>
+                     <option value="Low to High">Giá: Từ thấp đến cao</option>
+                     <option value="High to Low">Giá: Từ thấp đến cao</option>
+                     <option value="High to Low">Tên: Từ A - Z</option>
+                     <option value="High to Low">Tên: Từ Z - A</option>
+                     <option value="Release Date">Sản phẩm sớm nhất</option>
+                     <option value="Avg. Rating">Đánh giá cao</option>
+                  </select>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- row -->
+      <div class="row g-4 row-cols-xl-4 row-cols-lg-3 row-cols-2 row-cols-md-2 mt-2">
+         <!-- col -->
+         <div class="col">
+            <!-- card -->
+            <div class="card card-product">
+               <div class="card-body">
+                  <!-- badge -->
+                  <div class="text-center position-relative">
+                     <div class="position-absolute top-0 start-0">
+                        <span class="badge bg-danger">Giảm 10%</span>
+                     </div>
+                     <a href="#">
+                        <!-- img -->
+                        <img src="trangchu/Cây trang trí/CT_Caybinhan.jpg" alt="Cây bình an" class="mb-3 img-fluid anhsanpham">
+                     </a>
+                     <!-- action btn -->
+                  </div>
+                  <!-- heading -->
+                  <div class="text-small mb-1">
+                     <a href="#!" class="text-decoration-none text-muted text-center"><small>Cây Trang Trí</small></a>
+                  </div>
+                  <h2 class="fs-6"><a href="shop-single.html" class="text-inherit text-decoration-none">Cây Bình An</a></h2>
+                  <div>
+                     <!-- rating -->
+                     <small class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                     </small>
+                     <span class="text-muted small">4.5(128)</span>
+                  </div>
+                  <!-- price -->
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                     <div>
+                        <span class="text-dark">110.000</span><sup><small>đ</small></sup>
+                        <span class="text-decoration-line-through text-muted">120.000<sup><small>đ</small></sup></span>
+                     </div>
+                     <!-- btn -->
+                     <div>
+                        <a href="#!" class="btn btn-primary btn-sm themgiohang">
+                           + Thêm vào giỏ
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         <!-- col -->
+         <div class="col">
+            <!-- card -->
+            <div class="card card-product">
+               <div class="card-body">
+                  <!-- badge -->
+                  <div class="text-center position-relative">
+                     
+                     <div class="position-absolute top-0 start-0">
+                        <span class="badge bg-danger">Giảm 5%</span>
+                     </div>
+                     <a href="shop-single.html">
+                        <!-- img -->
+                        <img src="trangchu/caylakim/CK_olive.jpg" alt="Cây Olive" class="mb-3 img-fluid anhsanpham">
+                     </a>
+                  </div>
+                  <!-- heading -->
+                  <div class="text-small mb-1">
+                     <a href="#!" class="text-decoration-none text-muted"><small>Cây Lá Kim</small></a>
+                  </div>
+                  <h2 class="fs-6"><a href="shop-single.html" class="text-inherit text-decoration-none">Cây Olive chậu nhỏ</a></h2>
+                  <div class="text-warning">
+                     <!-- rating -->
+                     <small>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                     </small>
+                     <span class="text-muted small">4.5 (55)</span>
+                  </div>
+                  <!-- price -->
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                     <div class = "col-sm-7">
+                        <span class="text-dark">150.000<sup><small>đ</small></sup></span>
+                        <span class="text-decoration-line-through text-muted">158.000<sup><small>đ</small></sup></span>
+                     </div>
+                     <!-- btn -->
+                     <div class = "col-sm-5">
+                        <a href="#!" class="btn btn-primary btn-sm themgiohang">
+                           + Thêm vào giỏ
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- col -->
+         <div class="col">
+            <!-- card -->
+            <div class="card card-product">
+               <div class="card-body">
+                  <!-- badge -->
+                  <div class="text-center position-relative">
+                     <a href="shop-single.html"><img src="trangchu/hoathanthao/Hoa lan/HT_Orchid1.jpg" alt="Hoa Lan Tím" class="mb-3 img-fluid anhsanpham"></a>
+                  </div>
+                  <!-- heading -->
+                  <div class="text-small mb-1">
+                     <a href="#!" class="text-decoration-none text-muted">Hoa Thân Thảo</small></a>
+                  </div>
+                  <h2 class="fs-6"><a href="shop-single.html" class="text-inherit text-decoration-none">Hoa Lan Tím </a></h2>
+                  <div class="text-warning">
+                     <!-- rating -->
+                     <small>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                     </small>
+                     <span class="text-muted small">5 (469)</span>
+                  </div>
+                  <!-- price -->
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                     <div class = "col-sm-7">
+                        <span class="text-dark">130.000<sup><small>đ</small></sup></span>
+                     </div>
+                     <!-- btn -->
+                     <div class = "col-sm-5">
+                        <a href="#!" class="btn btn-primary btn-sm themgiohang">
+                           + Thêm vào giỏ
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- col -->
+         <div class="col">
+            <!-- card -->
+            <div class="card card-product">
+               <div class="card-body">
+                  <!-- badge -->
+                  <div class="text-center position-relative">
+                     <div class="position-absolute top-0">
+                        <span class="badge bg-danger">Giảm 12%</span>
+                     </div>
+                     <a href="#">
+                        <!-- img -->
+                        <img src="trangchu/caylakim/CK_nortfolk.jpg" alt="Cây Nortfork" class="mb-3 img-fluid anhsanpham">
+                     </a>
+                  </div>
+                  <!-- heading -->
+                  <div class="text-small mb-1">
+                     <a href="#!" class="text-decoration-none text-muted"><small>Cây Lá Kim</small></a>
+                  </div>
+                  <h2 class="fs-6"><a href="#" class="text-inherit text-decoration-none">Cây NortFolk Nhập Khẩu</a></h2>
+                  <div class="text-warning">
+                     <!-- rating -->
+                     <small>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                     </small>
+                     <span class="text-muted small">3.5 (235)</span>
+                  </div>
+                  <!-- price -->
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                     <div class = "col-sm-7">
+                        <span class="text-dark">130.000<sup><small>đ</small></sup></span>
+                     </div>
+                     <!-- btn -->
+                     <div class = "col-sm-5">
+                        <a href="#!" class="btn btn-primary btn-sm themgiohang">
+                           + Thêm vào giỏ
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- col -->
+         <div class="col">
+            <!-- card -->
+            <div class="card card-product">
+               <div class="card-body">
+                  <!-- badge -->
+                  <div class="text-center position-relative">
+                     <div class="position-absolute top-0 start-0">
+                        <span class="badge bg-danger">Giảm 10%</span>
+                     </div>
+                     <a href="#"><img src="trangchu/caylakim/CK_holiday.jpg" alt="Cây thông trang trí" class="mb-3 img-fluid anhsanpham"></a>
+                  </div>
+                  <!-- heading -->
+                  <div class="text-small mb-1">
+                     <a href="#!" class="text-decoration-none text-muted"><small>Cây Lá Kim</small></a>
+                  </div>
+                  <h2 class="fs-6"><a href="shop-single.html" class="text-inherit text-decoration-none">Cây Thông Trang Trí</a></h2>
+                  <div class="text-warning">
+                     <!-- rating -->
+                     <small>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                     </small>
+                     <span class="text-muted small">4.5 (39)</span>
+                  </div>
+                  <div class="d-flex justify-content-between mt-4">
+                     <div class = "col-sm-7">
+                        <span class="text-dark">120.000<sup><small>đ</small></sup></span>
+                        <span class="text-decoration-line-through text-muted">100.000<sup><small>đ</small></sup></span>
+                     </div>
+                     <!-- btn -->
+                     <div class = "col-sm-5">
+                        <a href="#!" class="btn btn-primary btn-sm themgiohang">
+                           + Thêm vào giỏ
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- col -->
+         <div class="col">
+            <!-- card -->
+            <div class="card card-product">
+               <div class="card-body">
+                  <!-- badge -->
+                  <div class="text-center position-relative">
+                     <div class="position-absolute top-0">
+                        <span class="badge bg-danger">Giảm 3%</span>
+                     </div>
+                     <a href="shop-single.html">
+                        <!-- img -->
+                        <img src="trangchu/hoathanthao/Hoa poppy/HT_Poppy1.jpg" alt="Hoa Poppy" class="mb-1 img-fluid anhsanpham">
+                     </a>
+                  </div>
+                  <!-- heading -->
+                  <div class="text-small mb-1">
+                     <a href="#!" class="text-decoration-none text-muted"><small>Cây Lá Kim</small></a>
+                  </div>
+                  <h2 class="fs-6"><a href="shop-single.html" class="text-inherit text-decoration-none">Hoa Poppy vàng</a></h2>
+                  <div>
+                     <!-- rating -->
+                     <small class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                     </small>
+                     <span class="text-muted small">4.5 (189)</span>
+                  </div>
+                  <!-- price -->
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                     <div class = "col-sm-7">
+                        <span class="text-dark">130.000<sup><small>đ</small></sup></span>
+                        <span class="text-decoration-line-through text-muted">135.000<sup><small>đ</small></sup></span>
+                     </div>
+                     <!-- btn -->
+                     <div class = "col-sm-5">
+                        <a href="#!" class="btn btn-primary btn-sm themgiohang">
+                           + Thêm vào giỏ
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- col -->
+         <div class="col">
+            <!-- card -->
+            <div class="card card-product">
+               <div class="card-body">
+                  <!-- badge -->
+                  <div class="text-center position-relative">
+                     <a href="#"><img src="trangchu/caylakim/CK_cat.jpg" class="mb-3 img-fluid anhsanpham"></a>
+                  </div>
+                  <!-- heading -->
+                  <div class="text-small mb-1">
+                     <a href="#!" class="text-decoration-none text-muted"><small>Cây Lá Kim</small></a>
+                  </div>
+                  <h2 class="fs-6"><a href="shop-single.html" class="text-inherit text-decoration-none">Cây xanh</a></h2>
+                  <div class="text-warning">
+                     <!-- rating -->
+                     <small>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                     </small>
+                     <span class="text-muted small">5 (345)</span>
+                  </div>
+                  <!-- price -->
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                     <div class = "col-sm-7">
+                        <span class="text-dark">100.000<sup><small>đ</small></sup></span>
+                     </div>
+                     <!-- btn -->
+                     <div class = "col-sm-5">
+                        <a href="#!" class="btn btn-primary btn-sm themgiohang">
+                           + Thêm vào giỏ
+                        </a>
+                     </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         <!-- col -->
+         <div class="col">
+            <!-- card -->
+            <div class="card card-product">
+               <div class="card-body">
+                  <!-- badge -->
+                  <div class="text-center position-relative">
+                     <a href="#"><img src="trangchu/caylakim/CK_dried.jpg" alt="Hoa Khô trang trí" class="mb-3 img-fluid anhsanpham"></a>
+                  </div>
+                  <!-- heading -->
+                  <div class="text-small mb-1">
+                     <a href="#!" class="text-decoration-none text-muted"><small>Cây Lá Kim</small></a>
+                  </div>
+                  <h2 class="fs-6"><a href="#" class="text-inherit text-decoration-none">Hoa Khô Trang Trí</a></h2>
+                  <div class="text-warning">
+                     <!-- rating -->
+                     <small>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                     </small>
+                     <span class="text-muted small">4 (90)</span>
+                  </div>
+                  <!-- price -->
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                     <div class = "col-sm-7">
+                        <span class="text-dark">130.000<sup><small>đ</small></sup></span>
+                     </div>
+                     <!-- btn -->
+                     <div class = "col-sm-5">
+                        <a href="#!" class="btn btn-primary btn-sm themgiohang">
+                           + Thêm vào giỏ
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- col -->
+         <div class="col">
+            <!-- card -->
+            <div class="card card-product">
+               <div class="card-body">
+                  <!-- badge -->
+                  <div class="text-center position-relative">
+                     <a href="shop-single.html"><img src="trangchu/hoathanthao/Hoa cúc/HT_hoacuc.jpg" alt="Hoa Cúc vàng" class="mb-3 img-fluid anhsanpham"></a>
+                  </div>
+                  <!-- heading -->
+                  <div class="text-small mb-1">
+                     <a href="#!" class="text-decoration-none text-muted"><small>Hoa Thân Thảo</small></a>
+                  </div>
+                  <h2 class="fs-6"><a href="shop-single.html" class="text-inherit text-decoration-none">Hoa Cúc vàng</a></h2>
+                  <div class="text-warning">
+                     <!-- rating -->
+                     <small>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                     </small>
+                     <span class="text-muted small">4.5 (67)</span>
+                  </div>
+                  <!-- price -->
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                     <!-- btn -->
+                        <div class = "col-sm-7">
+                           <span class="text-dark">135.000<sup><small>đ</small></sup></span>
+                        </div>
+                        <!-- btn -->
+                        <div class = "col-sm-5">
+                           <a href="#!" class="btn btn-primary btn-sm themgiohang">
+                              + Thêm vào giỏ
+                           </a>
+                        </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- col -->
+         <div class="col">
+            <!-- card -->
+            <div class="card card-product">
+               <div class="card-body">
+                  <!-- badge -->
+                  <div class="text-center position-relative">
+                     <a href="#"><img src="trangchu/caylakim/CK_ponytail.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid"></a>
+                  </div>
+                  <!-- heading -->
+                  <div class="text-small mb-1">
+                     <a href="#!" class="text-decoration-none text-muted"><small>Cây Lá Kim</small></a>
+                  </div>
+                  <h2 class="fs-6"><a href="#" class="text-inherit text-decoration-none">Cây PonyTail Nhập Khẩu</a></h2>
+                  <div class="text-warning">
+                     <!-- rating -->
+                     <small>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                     </small>
+                     <span class="text-muted small">3.5 (89)</span>
+                  </div>
+                  <div class="d-flex justify-content-between mt-4">
+                     <div class = "col-sm-7">
+                        <span class="text-dark">210.000<sup><small>đ</small></sup></span>
+                     </div>
+                     <!-- btn -->
+                     <div class = "col-sm-5">
+                        <a href="#!" class="btn btn-primary btn-sm themgiohang">
+                           + Thêm vào giỏ
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <!-- card -->
+            <div class="card card-product">
+               <div class="card-body">
+                  <!-- badge -->
+                  <div class="text-center position-relative">
+                     <a href="#"><img src="trangchu/caylakim/CK_palm.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid"></a>
+                  </div>
+                  <!-- heading -->
+                  <div class="text-small mb-1">
+                     <a href="#!" class="text-decoration-none text-muted"><small>Cây Lá Kim</small></a>
+                  </div>
+                  <h2 class="fs-6"><a href="#" class="text-inherit text-decoration-none">Cây Xanh Trang Trí</a></h2>
+                  <div class="text-warning">
+                     <!-- rating -->
+                     <small>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                     </small>
+                     <span class="text-muted small">3.5 (89)</span>
+                  </div>
+                  <div class="d-flex justify-content-between mt-4">
+                        <div class = "col-sm-7">
+                           <span class="text-dark">210.000<sup><small>đ</small></sup></span>
+                        </div>
+                        <!-- btn -->
+                        <div class = "col-sm-5">
+                           <a href="#!" class="btn btn-primary btn-sm themgiohang">
+                              + Thêm vào giỏ
+                           </a>
+                        </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <!-- card -->
+            <div class="card card-product">
+               <div class="card-body">
+                  <!-- badge -->
+                  <div class="text-center position-relative">
+                     <a href="#"><img src="trangchu/caylakim/CK_parlor.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid"></a>
+                  </div>
+                  <!-- heading -->
+                  <div class="text-small mb-1">
+                     <a href="#!" class="text-decoration-none text-muted"><small>Cây Lá Kim</small></a>
+                  </div>
+                  <h2 class="fs-6"><a href="#" class="text-inherit text-decoration-none">Cây Parlor Nhập Khẩu</a></h2>
+                  <div class="text-warning">
+                     <!-- rating -->
+                     <small>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                     </small>
+                     <span class="text-muted small">3.5 (89)</span>
+                  </div>
+                  <div class="d-flex justify-content-between mt-4">
+                        <div class = "col-sm-7">
+                           <span class="text-dark">210.000<sup><small>đ</small></sup></span>
+                        </div>
+                        <!-- btn -->
+                        <div class = "col-sm-5">
+                           <a href="#!" class="btn btn-primary btn-sm themgiohang">
+                              + Thêm vào giỏ
+                           </a>
+                        </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Nút chuyển trang -->
+      <br>
+      <div class="row mt-8 timtrang">
+         <div class="col">
+            <!-- nav -->
+            <nav>
+               <ul class="pagination">
+                  <li class="page-item disabled">
+                     <a class="page-link mx-1" href="#" aria-label="Previous">
+                        <i class="text-success fa-solid fa-arrow-left"></i>
+                     </a>
+                  </li>
+                  <li class="page-item"><a class="text-white page-link mx-1 lietketpage" href="#">1</a></li>
+                  <li class="page-item"><a class="text-success page-link mx-1" href="#">2</a></li>
+                  <li class="page-item">
+                     <a class=" page-link mx-1" href="#" aria-label="Next">
+                        <i class="text-success fa-solid fa-arrow-right"></i>
+                     </a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+
+  </div>
+</div>
+</div>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-3">
+        <!--Liên hệ  -->
+        <div class="col-lg-3 col-md-3 footer-links d-flex">
+          <div>
+            <h4><i class="bi bi-telephone icon"></i>
+              Liên hệ</h4>
+            <p>
+              <strong>Điện thoại:</strong> 096531342<br>
+              <strong>Email:</strong> tiemcayleaflife@gmail.com<br>
+            </p>
+            <br>
+            <h4><i class="bi bi-clock icon"></i>
+              Giờ mở cửa</h4>
+            <p>
+              <strong>Thứ 2 - Thứ 7: 7AM - 21PM </strong><br>
+              <strong>Chủ nhật: 8AM - 17PM</strong>
+            </p>
+          </div>
+        </div>
+        <!-- Chính sách -->
+        <div class="col-lg-3 col-md-3 footer-links d-flex">
+          <div>
+            <h4>Điều Khoản chính sách</h4>
+            <p><a style = "color: white" href = "#">Chính sách thanh toán</a></p>
+            <p><a style = "color: white" href = "#">Chính sách giao hàng</a></p>
+            <p><a style = "color: white" href = "#">Chính sách bảo hành</a></p>
+            <p><a style = "color: white" href = "#">Chính sách bảo mật</a></p>
+            <p><a style = "color: white" href = "#">Miễn trừ trách nhiệm</a></p>
+          </div>
+        </div>
+        <!-- Về chúng tôi -->
+        <div class="col-lg-3 col-md-3 footer-links">
+          <img class = "text-center" src = "assets/img/logo2.png" width="180" height="80">
+          <!-- <h4>Giới thiệu về chúng tôi</h4> -->
+          <br>
+          <br>
+          <p style="text-align: justify;">Hãy đến và khám phá không gian xanh tươi mới tại Leaflife, nơi mà cây cảnh không chỉ là sản phẩm,
+             mà còn là nguồn năng lượng tích cực cho cuộc sống hàng ngày của bạn.</p>
+          <div class="social-links d-flex">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <!-- Địa chỉ -->
+        <div class="col-lg-3 col-md-3 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div>
+            <h4>Địa chỉ</h4>
+            <p>
+              <i class="fa-solid fa-map-pin"></i>
+              12 Chùa Bộc, Quan Trung, Hà Nội<br>
+              <br>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6019455190976!2d105.8258472108518!3d21.00858748839037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac8041a9648d%3A0xe487dd495fdfd676!2zMTIgUC4gQ2jDuWEgQuG7mWMsIFF1YW5nIFRydW5nLCDEkOG7kW5nIMSQYSwgSMOgIE7hu5lpLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1700671029212!5m2!1sen!2s" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="credits">
+        Designed by <a href="#">Nhóm 5</a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/searchform.js"></script>
+</body>
+
+</html>

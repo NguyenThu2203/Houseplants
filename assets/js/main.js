@@ -5,9 +5,23 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
+// const anhsanpham = document.querySelector('.anhsanpham'); 
+// setTimeout(function(){
+//   anhsanpham.addEventListener('mouseover', function(){
+//     anhsanpham.style.height = "300px"; 
+//   })
+// }, 3000)
+// setTimeout(function(){
+//   anhsanpham.addEventListener('mouseout', function(){
+//     anhsanpham.style.height = "200px"; 
+//   })
+// }, 3000)
 // Khi click vào thêm vào giỏ hàng thì có hành động hiển thị đã thêm 
   /**
    * Preloader
@@ -18,6 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
       preloader.remove();
     });
   }
+  const cursor = document.querySelector('.cursor'); 
+  document.addEventListener('mousemove', (e) =>{
+    cursor.style.left = e.pageX + 'px'; 
+    cursor.style.top = e.pageY + 'px'; 
+  })
+
 
   /**
    * Sticky header on scroll
@@ -91,6 +111,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   });
 
+// //  Hover ảnh có hiệu ứng 
+// const anhsanpham = document.getElementsByClassName("anhsanpham"); 
+// for (var i = 0; i < anhsanpham.length; i ++){
+//   anhsanpham[i].addEventListener('mouseover', function(){
+    
+//   })
+// }
   /**
    * Toggle mobile nav dropdowns
    */
