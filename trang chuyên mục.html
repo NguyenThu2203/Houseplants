@@ -26,8 +26,28 @@
 
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/chuyenmuc/trangchuyenmuc.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.leanhduc.pro.vn/utilities/animation/shake-effect/style.css"/>
+ 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nouislider@14.7.0/distribute/nouislider.min.css">
+
+  <style>
+   /* Customizing the slider handle */
+   .noUi-handle {
+     width: 10px;
+     height: 10px;
+     border-radius: 50%;
+     background-color: #fffff;
+   }
+
+   /* Customizing the slider range color */
+   .noUi-connect {
+     background-color: #116e4a;
+   }
+
+   /* Adjusting the slider height */
+ 
+ </style>
 
 </head>
 
@@ -46,7 +66,7 @@
     <div class="container-fluid">
       <div class="row">
         <a href="index.html" class="text-center">
-          <img class = "text-center img-fluid" src="assets/img/logo2.png" alt="Logo LeafLife" width="150" height="100">
+          <img class = "text-center img-fluid" src="assets/imgs/logo2.png" alt="Logo LeafLife" width="150" height="100">
         </a>
       </div>
     </div>
@@ -168,15 +188,20 @@
                       <!-- price -->
 
                       <!--Lọc sản phẩm theo giá-->
+
                       <h5 class="mb-3 price">Mức giá</h5>
                       <div>
-                         <!-- range -->
-                         <div id="priceRange" class="mb-3 noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(14.6259%, 0px) scale(0.510204, 1);"></div></div><div class="noUi-origin" style="transform: translate(-85.3741%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="6.0" aria-valuemax="199.0" aria-valuenow="49.0" aria-valuetext="$49"><div class="noUi-touch-area"></div></div></div><div class="noUi-origin" style="transform: translate(-34.3537%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="49.0" aria-valuemax="300.0" aria-valuenow="199.0" aria-valuetext="$199"><div class="noUi-touch-area"></div></div></div></div></div>
-                         <small class="text-muted">Price:</small>
-                         <span id="priceRange-value" class="small">0 - 250,000</span>
+                                 <!-- range 
+                                 <div id="priceRange" class="mb-3 noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(14.6259%, 0px) scale(0.510204, 1);"></div></div><div class="noUi-origin" style="transform: translate(-85.3741%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="6.0" aria-valuemax="199.0" aria-valuenow="49.0" aria-valuetext="$49"><div class="noUi-touch-area"></div></div></div><div class="noUi-origin" style="transform: translate(-34.3537%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="49.0" aria-valuemax="300.0" aria-valuenow="199.0" aria-valuetext="$199"><div class="noUi-touch-area"></div></div></div></div></div>
+                                 <small class="text-muted">Price:</small>
+                                 <span id="priceRange-value" class="small">0 - 250,000</span>
+                              </div>
+                           </div>-->
+                           <div class="container truotgia">
+                              <div id="priceRange"></div>
+                              <output id="priceValue">50 - 70</output>
+                           </div>
                       </div>
-                   </div>
-
 
                    <!-- ----rating -->
                    <div class="mb-8 rating">
@@ -258,17 +283,12 @@
                       <!-- Banner Content -->
                       <!-- Banner Image -->
                       <!-- img -->
-                      <img src="assets/img/CT_nhatquynhxuongca.jpg" alt="Cây cảnh" class="img-fluid rounded">
+                      <img src="assets/imgs/CT_nhatquynhxuongca.jpg" alt="Cây cảnh" class="img-fluid rounded">
                       <!-- Banner Image -->
                    </div>
                <!-- </div>
              </div>-->
           </aside>
-
-
-
-
-
 
           <section class="col-lg-9 col-md-12 sanpham">
              <!-- card -->
@@ -342,7 +362,7 @@
                             </div>
                             <a href="chitietsanpham.html">
                                <!-- img -->
-                               <img src="assets/img/CT_cayhuyhoang.jpg" alt="Cayhuyhoang" class="mb-3 img-fluid">
+                               <img src="assets/imgs/CT_cayhuyhoang.jpg" alt="Cayhuyhoang" class="mb-3 img-fluid">
                             </a>
                             <!-- action btn -->
                             <div class="card-product-action">
@@ -405,7 +425,7 @@
 
                             <a href="chitietsanpham.html">
                                <!-- img -->
-                               <img src="assets/img/CT_cautramdat.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid">
+                               <img src="assets/imgs/CT_cautramdat.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid">
                             </a>
                             <!-- action btn -->
                             <div class="card-product-action">
@@ -457,7 +477,7 @@
                       <div class="card-body">
                          <!-- badge -->
                          <div class="text-center position-relative">
-                            <a href="chitietsanpham.html"><img src="assets/img/CT_cayluoiho.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid"></a>
+                            <a href="chitietsanpham.html"><img src="assets/imgs/CT_cayluoiho.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid"></a>
                             <!-- action btn -->
                             <div class="card-product-action">
                                <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal">
@@ -516,7 +536,7 @@
 
                             <a href="chitietsanpham.html">
                                <!-- img -->
-                               <img src="assets/img/CT_caykimtien.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid">
+                               <img src="assets/imgs/CT_caykimtien.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid">
                             </a>
                             <!-- action btn -->
                             <div class="card-product-action">
@@ -570,7 +590,7 @@
                       <div class="card-body">
                          <!-- badge -->
                          <div class="text-center position-relative">
-                            <a href="chitietsanpham.html"><img src="assets/img/CT_caymonstera.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid"></a>
+                            <a href="chitietsanpham.html"><img src="assets/imgs/CT_caymonstera.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid"></a>
                             <!-- action btn -->
                             <div class="card-product-action">
                                <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal">
@@ -584,7 +604,7 @@
                          <div class="text-small mb-1">
                             <a href="#!" class="text-decoration-none text-muted"><small>Cây trang trí</small></a>
                          </div>
-                         <h2 class="fs-6"><a href="chitietsanpham.html" class="text-inherit text-decoration-none">Trầu bà lá xẻ nhăn</a></h2>
+                         <h2 class="fs-6"><a href="chitietsanpham.html" class="text-inherit text-decoration-none" >Trầu bà lá xẻ nhăn</a></h2>
                          <div class="text-warning">
                             <!-- rating -->
                             <small>
@@ -627,7 +647,7 @@
                             </div>
                             <a href="chitietsanpham.html">
                                <!-- img -->
-                               <img src="assets/img/CT_traubadevuong.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid">
+                               <img src="assets/imgs/CT_traubadevuong.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid">
                             </a>
                             <!-- action btn -->
                             <div class="card-product-action">
@@ -681,7 +701,7 @@
                       <div class="card-body">
                          <!-- badge -->
                          <div class="text-center position-relative">
-                            <a href="chitietsanpham.html"><img src="assets/img/CT_caymongrong.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid"></a>
+                            <a href="chitietsanpham.html"><img src="assets/imgs/CT_caymongrong.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid"></a>
                             <!-- action btn -->
                             <div class="card-product-action">
                                <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal">
@@ -731,7 +751,7 @@
                       <div class="card-body">
                          <!-- badge -->
                          <div class="text-center position-relative">
-                            <a href="chitietsanpham.html"><img src="assets/img/CT_caytruongsinh.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid"></a>
+                            <a href="chitietsanpham.html"><img src="assets/imgs/CT_caytruongsinh.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid"></a>
                             <!-- action btn -->
                             <div class="card-product-action">
                                <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal">
@@ -784,7 +804,7 @@
                       <div class="card-body">
                          <!-- badge -->
                          <div class="text-center position-relative">
-                            <a href="chitietsanpham.html"><img src="assets/img/CT_duacanhnen.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid"></a>
+                            <a href="chitietsanpham.html"><img src="assets/imgs/CT_duacanhnen.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid"></a>
                             <!-- action btn -->
                             <div class="card-product-action">
                                <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal">
@@ -841,7 +861,7 @@
                       <div class="card-body">
                          <!-- badge -->
                          <div class="text-center position-relative">
-                            <a href="chitietsanpham.html"><img src="assets/img/CT_Cayngocngan.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid"></a>
+                            <a href="chitietsanpham.html"><img src="assets/imgs/CT_Cayngocngan.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid"></a>
                             <!-- action btn -->
                             <div class="card-product-action">
                                <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal">
@@ -893,7 +913,7 @@
                   <div class="card-body">
                      <!-- badge -->
                      <div class="text-center position-relative">
-                        <a href="chitietsanpham.html"><img src="assets/img/CT_Cayngocngan.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid"></a>
+                        <a href="chitietsanpham.html"><img src="assets/imgs/CT_tbmoonlight.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid"></a>
                         <!-- action btn -->
                         <div class="card-product-action">
                            <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal">
@@ -907,7 +927,7 @@
                      <div class="text-small mb-1">
                         <a href="#!" class="text-decoration-none text-muted"><small>Cây trang Trí</small></a>
                      </div>
-                     <h2 class="fs-6"><a href="chitietsanpham.html" class="text-inherit text-decoration-none">Cây ngọc ngân</a></h2>
+                     <h2 class="fs-6"><a href="chitietsanpham.html" class="text-inherit text-decoration-none">Trầu bà moonlight</a></h2>
                      <div class="text-warning">
                         <!-- rating -->
                         <small>
@@ -945,7 +965,7 @@
       <div class="card-body">
          <!-- badge -->
          <div class="text-center position-relative">
-            <a href="chitietsanpham.html"><img src="assets/img/CT_Cayngocngan.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid"></a>
+            <a href="chitietsanpham.html"><img src="assets/imgs/CT_cayphuquy.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid"></a>
             <!-- action btn -->
             <div class="card-product-action">
                <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal">
@@ -959,7 +979,7 @@
          <div class="text-small mb-1">
             <a href="#!" class="text-decoration-none text-muted"><small>Cây trang Trí</small></a>
          </div>
-         <h2 class="fs-6"><a href="chitietsanpham.html" class="text-inherit text-decoration-none">Cây ngọc ngân</a></h2>
+         <h2 class="fs-6"><a href="chitietsanpham.html" class="text-inherit text-decoration-none">Cây phú quý</a></h2>
          <div class="text-warning">
             <!-- rating -->
             <small>
@@ -992,45 +1012,32 @@
    </div>
 </div>
       
-             <div class="row mt-8">
-                <div class="col">
+             <div class="row mt-8 phantrang">
+                <div class="col ">
                    <!-- nav -->
-                   <nav>
-                      <ul class="pagination">
-                         <li class="page-item disabled">
-                            <a class="page-link mx-1" href="#" aria-label="Previous">
-                               <i class="feather-icon icon-chevron-left"></i>
-                            </a>
-                         </li>
-                         <li class="page-item"><a class="page-link mx-1 active" href="#">1</a></li>
-                         <li class="page-item"><a class="page-link mx-1" href="#">2</a></li>
-
-                         <li class="page-item"><a class="page-link mx-1" href="#">...</a></li>
-                         <li class="page-item"><a class="page-link mx-1" href="#">12</a></li>
-                         <li class="page-item">
-                            <a class="page-link mx-1" href="#" aria-label="Next">
-                               <i class="feather-icon icon-chevron-right"></i>
-                            </a>
-                         </li>
-                      </ul>
-                   </nav>
+                   
+                     <nav aria-label="...">
+                        <ul class="pagination">
+                          <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Trước</a>
+                          </li>
+                          
+                          <li class="page-item active" aria-current="page">
+                            <a class="page-link text-white custom-bg-light" href="#">1</a>
+                          </li>
+                          <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link text-dark" href="#">Kế tiếp</a>
+                          </li>
+                        </ul>
+                      </nav>
                 </div>
              </div>
           </section>
        </div>
     </div>
  </div>
-
-
-
-
-
-
-
-
-
-
-
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
@@ -1068,7 +1075,7 @@
         </div>
         <!-- Về chúng tôi -->
         <div class="col-lg-3 col-md-6 footer-links">
-          <img class = "text-center" src = "assets/img/logo2.png" width="180" height="80">
+          <img class = "text-center" src = "assets/imgs/logo2.png" width="180" height="80">
           <!-- <h4>Giới thiệu về chúng tôi</h4> -->
           <br>
           <br>
@@ -1107,7 +1114,27 @@
   </footer><!-- End Footer -->
   <!-- End Footer -->
 
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/nouislider@14.7.0/distribute/nouislider.min.js"></script>
+  <script>
+    var priceRange = document.getElementById('priceRange');
+    var priceValue = document.getElementById('priceValue');
+  
+    noUiSlider.create(priceRange, {
+      start: [30000, 70000],
+      connect: true,
+      range: {
+        'min': 0,
+        'max': 300000
+      }
+    });
+  
+    priceRange.noUiSlider.on('update', function (values) {
+      // Sử dụng hàm toFixed để làm tròn số và loại bỏ số 0 sau dấu thập phân
+      priceValue.textContent = values.map(value => parseFloat(value).toFixed(2)).join(' - ');
+    });
+  </script>
+  
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
