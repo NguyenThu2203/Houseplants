@@ -1,41 +1,42 @@
-# Đề tài: Xây dựng trang web kinh doanh sách
+# Đề tài: Xây dựng trang web bán cây xinh 
 
-## Nhóm 1 - Thiết kế web (231IS19A01)
+## Nhóm 5 - Thiết kế web (231IS19A01)
 
-### ✊ Danh sách thành viên
+### Danh sách thành viên
 
 | Họ và tên           | Mã sinh viên | Chức vụ        |
 | ------------------  | ------------ | -------------- | 
 | Thái Thu Huyền      |              | Nhóm trưởng    | 
 | Nguyễn Thị Thu Hường|              |                |
 | Nguyễn Thị Hà Thu   | 24A40431443  |                |
-| Vũ Thị Thương       |              |                |      |
+| Vũ Thị Thương       |              |                |      
 
 ### 📘 Giới thiệu đề tài
-
+4 thành viên nhóm là những người có niềm yêu thích đối với cây xanh, chúng em lựa chọn đề tài "Xây dựng trang web bán cây xinh" làm đề tài cho bài tập lớn cho bộ môn Thiết kế Web. 
+Cây xanh có vai trò rất quan trọng đối với mỗi người chúng ta như làm sạch không khí, tạo bóng mát, xây dựng môi trường xanh, và quan trọng trong hiện đại, cây xanh được sử dụng nhiều với mục đích trang trí tại văn phòng và nhà ở. Cây xanh ngày được mọi người với đa dạng độ tuổi tìm mua. 
+Trong nền công nghệ ngày càng phát triển như hiện nay, việc cây xanh được tìm mua trên internet, các sàn thương mại điện tử ngày càng phổ biến hơn. Vì thế đây là một cơ hội để chúng em lựa chọn đề tài cho bài tập lớn. 
 
 ### 📖 Mô tả
 
-- **Trang chủ (Home)**: Bao gồm thông tin nổi bật, sách và merchandise mới lên kệ, sự kiện sắp diễn ra, chia sẻ mới nhất từ độc giả
+- **Trang chủ (Home)**: Bao gồm banner giảm giá, các sản phẩm nổi bật, các danh mục sản phẩm tại cửa hàng
 
-- **Trang bán hàng (Store)**: Bạn đọc có thể duyệt qua danh sách sách đang bán cũng như sản phẩm đi kèm như sổ tay, túi tote,...
+- **Trang cửa hàng (Store)**: Bao gồm tất cả sản phẩm mọi người có thể tìm mua
 
-- **Bảng tin (Feed)**: Cập nhật thông tin về những cuốn sách mới và cảm nhận của độc giả
+- **Trang bài viết - Tin tức(Feed)**: Các bài viết tin tức liên quan đến cây xanh và tác dụng của cây
   
-- **Sự kiện (Events)**: Các sự kiện offline & online liên quan đến văn hóa đọc, giao lưu cùng tác giả, dịch giả
+- **Trang chuyên mục (Events)**: Các sản phẩm được chia theo danh mục sản phẩm
 
 - **Giới thiệu (About us)**: Giới thiệu về câu chuyện của chúng tôi
+  
+- **Trang chi tiết sản phẩm (Details)**: Chi tiết về sản phẩm và có thể mua sản phẩm tại đây
 
 ### 🚀 Framework và thư viện sử dụng
-
-- 
+- Boostrap 5
 
 ### 🌐 Website tham khảo
 
-- [Nhã Nam](https://nhanam.vn/)
+- [The Tree Center ].https://www.thetreecenter.com/
  
-- [Abebooks](https://www.abebooks.com/collections/cm_sp=TopNav-_-Advs-_-Collections)
+- [Horti].https://heyhorti.com/?fbclid=IwAR15qP7JQVDXlsX6ZURHoLgUumOXVW6nYiM4bn3jX6Svze5GP1MFrLR8EK0
  
-- [Fahasa](https://www.fahasa.com/)
- 
-- [Vinabook](https://www.vinabook.com/)
+
