@@ -26,8 +26,7 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-        
+        <link href="css/style.css" rel="stylesheet">  
     </head>
 
     <body>
@@ -78,7 +77,6 @@
                                     <a href="cart.html" class="dropdown-item">Hoa Thân Thảo</a>
                                     <a href="hoathanleo.html" class="dropdown-item">Hoa Thân Leo</a>
                                     <a href="hoathanleo.html" class="dropdown-item"> Hoa Thân Gỗ</a>
-                                 
                                 </div>
                             </div>
                             <a href="about.html" class="nav-item nav-link">Về Chúng Tôi</a>
@@ -101,13 +99,32 @@
         </div>
         <!-- Navbar End -->
 
-         <!-- Hero Start -->
+        <!-- Tìm kiếm sản phẩm -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tìm kiếm sản phẩm -->
+
+        <!-- Hero Start -->
          <div class="container-fluid py-5 mb-5 hero-header">
             <div class="container py-5">
                 <div class="row g-5 align-items-center">
                     <div class="col-md-12 col-lg-7">
-                        <h4 class="mb-3 text-secondary">CHRISTMAS IS COMING! - SALE UP TO 50%</h4>
-                        <h1 class="mb-5 display-3 text-primary">LeafLife - sản phẩm chất lượng cho không gian xanh</h1>
+                        <h4 class="mb-3 text-secondary">LeafLife - sản phẩm chất lượng cho không gian xanh</h4>
+                        <h1 class="mb-5 display-3 text-primary">WELCOME CHRISTMAS - SALE UP TO 50%</h1>
                         <div class="position-relative mx-auto">
                             <input class="form-control border-2 border-secondary w-75 py-3 px-4 rounded-pill" type="number" placeholder="Search">
                             <button type="submit" class="btn btn-primary border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-100" style="top: 0; right: 25%;">Submit Now</button>
@@ -224,6 +241,9 @@
                             </ul>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
         <!---------------------Các sản phẩm --------------->
                     <div class="tab-content">
                         <div id="tab-1" class="tab-pane fade show p-0 active">
