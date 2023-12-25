@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Fruitables - Vegetable Website Template</title>
+        <title>Thanh toán</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -52,14 +52,20 @@
                     </div>
                 </div>
             </div>
-                
+            <div class="container-fluid px-0">
+                <div class="row">
+                  <a href="index.html" class="text-center">
+                    <img class = "text-center img-fluid mt-3" src="assets/imgs/logo2.png" alt="Logo LeafLife" width="150" height="100">
+                  </a>
+                </div>
+              </div>
+              <!-- navbar -->
              <div class="container px-0">  
                 <nav class="navbar navbar-light bg-white navbar-expand-xl">
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
                     <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
-                        <img class = "justify-content-center logo-website img-fluid" src = "assets/imgs/logo2.png" width="130" height="50">
                         <div class="navbar-nav mx-auto">
                             <a href="trangchu.html" class="nav-item nav-link">Trang Chủ</a>
                             <div class="nav-item dropdown">
@@ -100,12 +106,12 @@
             <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content rounded-0">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Tìm kiếm sản phẩm</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body d-flex align-items-center">
                         <div class="input-group w-75 mx-auto d-flex">
-                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <input type="search" class="form-control p-3" placeholder="Tìm kiếm" aria-describedby="search-icon-1">
                             <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
                         </div>
                     </div>
@@ -117,11 +123,11 @@
 
         <!-- Single Page Header start -->
         <div class="container-fluid page-header py-5">
-            <h1 class="text-center text-white display-6">Checkout</h1>
+            <h1 class="text-center text-white display-6">THANH TOÁN</h1>
             <ol class="breadcrumb justify-content-center mb-0">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                <li class="breadcrumb-item active text-white">Checkout</li>
+                <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                <li class="breadcrumb-item"><a href="#">Giỏ hàng</a></li>
+                <li class="breadcrumb-item active text-white">Thanh toán</li>
             </ol>
         </div>
         <!-- Single Page Header End -->
@@ -131,38 +137,44 @@
         <div class="container-fluid py-5">
             <div class="container py-5">
                 <h1 class="mb-4">Thanh toán</h1>
-                <form action="#">
+                <form action="#" method = "POST" onsubmit="return check()">
                     <div class="row g-5">
                         <div class="col-md-12 col-lg-6 col-xl-7">
                             <div class="row">
                                 <div class="col-md-12 col-lg-6">
                                     <div class="form-item w-100">
-                                        <label class="form-label my-3">Họ <sup>*</sup></label>
+                                        <label class="form-label my-3" id = "ho" onkeyup = "check()">Họ <sup>*</sup></label>
                                         <input type="text" class="form-control">
+                                        <p id="error-ho"></p>
                                     </div>
                                 </div>
-                                <div class="col-md-12 col-lg-6">
+                                <div class="col-md-12 col-lg-6 ten">
                                     <div class="form-item w-100">
-                                        <label class="form-label my-3">Tên<sup>*</sup></label>
+                                        <label class="form-label my-3" id = "ten" onkeyup = "check()">Tên<sup>*</sup></label>
                                         <input type="text" class="form-control">
+                                        <p id="error-ten"></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-item">
-                                <label class="form-label my-3">Tỉnh/ Thành phố<sup>*</sup></label>
+                                <label class="form-label my-3" id = "tinh" onkeyup = "check()">Tỉnh/ Thành phố<sup>*</sup></label>
                                 <input type="text" class="form-control">
+                                <p id="error-tinh"></p>
                             </div>
                             <div class="form-item">
-                                <label class="form-label my-3">Phường<sup>*</sup></label>
+                                <label class="form-label my-3" id = "phuong" onkeyup = "check()">Phường<sup>*</sup></label>
                                 <input type="text" class="form-control">
+                                <p id="error-phuong"></p>
                             </div>
                             <div class="form-item">
-                                <label class="form-label my-3">Địa chỉ chi tiết<sup>*</sup></label>
+                                <label class="form-label my-3" id = "diachi" onkeyup = "check()">Địa chỉ chi tiết<sup>*</sup></label>
                                 <input type="text" class="form-control">
+                                <p id="error-diachi"></p>
                             </div>
                             <div class="form-item">
-                                <label class="form-label my-3">Số điện thoại<sup>*</sup></label>
+                                <label class="form-label my-3" id = "sodienthoai" onkeyup = "check()">Số điện thoại<sup>*</sup></label>
                                 <input type="tel" class="form-control">
+                                <p id="error-sodienthoai"></p>
                             </div>
                             <div class="form-item">
                                 <label class="form-label my-3">Địa chỉ Email</label>
@@ -190,6 +202,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        <!-- Chi tiết đơn hàng -->
                                         <tr>
                                             <th scope="row">
                                                 <div class="d-flex align-items-center mt-2">
@@ -223,41 +236,7 @@
                                             <td class="py-5">2</td>
                                             <td class="py-5">$138.00</td>
                                         </tr>
-                                        <tr>
-                                            <th scope="row">
-                                            </th>
-                                            <td class="py-5"></td>
-                                            <td class="py-5"></td>
-                                            <td class="py-5">
-                                                <p class="mb-0 text-dark py-3">Subtotal</p>
-                                            </td>
-                                            <td class="py-5">
-                                                <div class="py-3 border-bottom border-top">
-                                                    <p class="mb-0 text-dark">$414.00</p>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">
-                                            </th>
-                                            <td class="py-5">
-                                                <p class="mb-0 text-dark py-4">Shipping</p>
-                                            </td>
-                                            <td colspan="3" class="py-5">
-                                                <div class="form-check text-start">
-                                                    <input type="checkbox" class="form-check-input bg-primary border-0" id="Shipping-1" name="Shipping-1" value="Shipping">
-                                                    <label class="form-check-label" for="Shipping-1">Free Shipping</label>
-                                                </div>
-                                                <div class="form-check text-start">
-                                                    <input type="checkbox" class="form-check-input bg-primary border-0" id="Shipping-2" name="Shipping-1" value="Shipping">
-                                                    <label class="form-check-label" for="Shipping-2">Flat rate: $15.00</label>
-                                                </div>
-                                                <div class="form-check text-start">
-                                                    <input type="checkbox" class="form-check-input bg-primary border-0" id="Shipping-3" name="Shipping-1" value="Shipping">
-                                                    <label class="form-check-label" for="Shipping-3">Local Pickup: $8.00</label>
-                                                </div>
-                                            </td>
-                                        </tr>
+                                        <!-- Tổng giá tiềm -->
                                         <tr>
                                             <th scope="row">
                                             </th>
@@ -275,41 +254,40 @@
                                     </tbody>
                                 </table>
                             </div>
+                            <!-- Phương thức thanh toán  -->
                             <div class="row g-4 text-center align-items-center justify-content-center border-bottom py-3">
                                 <div class="col-12">
                                     <div class="form-check text-start my-3">
-                                        <input type="checkbox" class="form-check-input bg-primary border-0" id="Transfer-1" name="Transfer" value="Transfer">
-                                        <label class="form-check-label" for="Transfer-1">Direct Bank Transfer</label>
+                                        <input type="radio" class="form-check-input bg-primary border-0" id="Transfer-1" name="Transfer" value="Transfer">
+                                        <label class="form-check-label" for="Transfer-1">Thanh toán bằng chuyển khoản</label>
                                     </div>
-                                    <p class="text-start text-dark">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</p>
+                                    <p class="text-start text-dark">Ghi chú Họ và tên + Mã đơn hàng vào đơn thanh toán của bạn.</p>
                                 </div>
                             </div>
                             <div class="row g-4 text-center align-items-center justify-content-center border-bottom py-3">
                                 <div class="col-12">
                                     <div class="form-check text-start my-3">
-                                        <input type="checkbox" class="form-check-input bg-primary border-0" id="Payments-1" name="Payments" value="Payments">
-                                        <label class="form-check-label" for="Payments-1">Check Payments</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row g-4 text-center align-items-center justify-content-center border-bottom py-3">
-                                <div class="col-12">
-                                    <div class="form-check text-start my-3">
-                                        <input type="checkbox" class="form-check-input bg-primary border-0" id="Delivery-1" name="Delivery" value="Delivery">
-                                        <label class="form-check-label" for="Delivery-1">Cash On Delivery</label>
+                                        <input type="radio" class="form-check-input bg-primary border-0 mt-2" id="Delivery-1" name="Delivery" value="Delivery">
+                                        <label class="form-check-label" for="Delivery-1">
+                                            <a href="#"><img src = "trangchu/momo.png" class = "img-fluid justify-content-between" width="50" height="50"></a>
+                                            Quét mã MoMo 
+                                        </label>
                                     </div>
                                 </div>
                             </div>
                             <div class="row g-4 text-center align-items-center justify-content-center border-bottom py-3">
                                 <div class="col-12">
                                     <div class="form-check text-start my-3">
-                                        <input type="checkbox" class="form-check-input bg-primary border-0" id="Paypal-1" name="Paypal" value="Paypal">
-                                        <label class="form-check-label" for="Paypal-1">Paypal</label>
+                                        <input type="radio" class="form-check-input bg-primary border-0 mt-2" id="Paypal-1" name="Paypal" value="Paypal">
+                                        <label class="form-check-label" for="Paypal-1">
+                                            <a href="#"><img src ="trangchu/zalopay.png" width="60" height="60" class = "img-fluid"></a>
+                                            Quét mã ZaloPay
+                                        </label>
                                     </div>
                                 </div>
                             </div>
                             <div class="row g-4 text-center align-items-center justify-content-center pt-4">
-                                <button type="button" class="btn border-secondary py-3 px-4 text-uppercase w-100 text-primary">Place Order</button>
+                                <input type="submit" class="btn border-secondary py-3 px-4 text-uppercase w-100 text-primary" value = "THANH TOÁN">
                             </div>
                         </div>
                     </div>
@@ -319,96 +297,78 @@
         <!-- Checkout Page End -->
 
 
-        <!-- Footer Start -->
-        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
-            <div class="container py-5">
-                <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
-                    <div class="row g-4">
-                        <div class="col-lg-3">
-                            <a href="#">
-                                <h1 class="text-primary mb-0">Fruitables</h1>
-                                <p class="text-secondary mb-0">Fresh products</p>
-                            </a>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="position-relative mx-auto">
-                                <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Your Email">
-                                <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Subscribe Now</button>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="d-flex justify-content-end pt-3">
-                                <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube"></i></a>
-                                <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row g-5">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-item">
-                            <h4 class="text-light mb-3">Why People Like us!</h4>
-                            <p class="mb-4">typesetting, remaining essentially unchanged. It was 
-                                popularised in the 1960s with the like Aldus PageMaker including of Lorem Ipsum.</p>
-                            <a href="" class="btn border-secondary py-2 px-4 rounded-pill text-primary">Read More</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="d-flex flex-column text-start footer-item">
-                            <h4 class="text-light mb-3">Shop Info</h4>
-                            <a class="btn-link" href="">About Us</a>
-                            <a class="btn-link" href="">Contact Us</a>
-                            <a class="btn-link" href="">Privacy Policy</a>
-                            <a class="btn-link" href="">Terms & Condition</a>
-                            <a class="btn-link" href="">Return Policy</a>
-                            <a class="btn-link" href="">FAQs & Help</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="d-flex flex-column text-start footer-item">
-                            <h4 class="text-light mb-3">Account</h4>
-                            <a class="btn-link" href="">My Account</a>
-                            <a class="btn-link" href="">Shop details</a>
-                            <a class="btn-link" href="">Shopping Cart</a>
-                            <a class="btn-link" href="">Wishlist</a>
-                            <a class="btn-link" href="">Order History</a>
-                            <a class="btn-link" href="">International Orders</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-item">
-                            <h4 class="text-light mb-3">Contact</h4>
-                            <p>Address: 1429 Netus Rd, NY 48247</p>
-                            <p>Email: Example@gmail.com</p>
-                            <p>Phone: +0123 4567 8910</p>
-                            <p>Payment Accepted</p>
-                            <img src="img/payment.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End -->
+       <!-- ----------Footer Start ------------------------------------------------------------------------------------------->
+      
+       <footer id="footer" class="footer">
 
-        <!-- Copyright Start -->
-        <div class="container-fluid copyright bg-dark py-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
-                    </div>
-                    <div class="col-md-6 my-auto text-center text-md-end text-white">
-                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
-                    </div>
-                </div>
+        <div class="container">
+          <div class="row gy-3">
+            <!--Liên hệ  -->
+            <div class="col-lg-3 col-md-6 footer-links d-flex">
+              <div>
+                <h4><i class="bi bi-telephone icon"></i>
+                  Liên hệ</h4>
+                <p>
+                  <strong>Điện thoại:</strong> 096531342<br>
+                  <strong>Email:</strong>tiemcayleaflife@gmail.com<br>
+                </p>
+                <br>
+                <h4><i class="bi bi-clock icon"></i>
+                  Giờ mở cửa</h4>
+                <p>
+                  <strong>Thứ 2-Thứ 7: 7AM</strong>-21PM<br>
+                  <strong>Chủ nhật: 8AM - 17PM</strong>
+                </p>
+              </div>
             </div>
+            <!-- Chính sách -->
+            <div class="col-lg-3 col-md-6 footer-links d-flex">
+              <div>
+                <h4>Điều Khoản chính sách</h4>
+                <p><a style = "color: white" href = "#">Chính sách thanh toán</a></p>
+                <p><a style = "color: white" href = "#">Chính sách giao hàng</a></p>
+                <p><a style = "color: white" href = "#">Chính sách bảo hành</a></p>
+                <p><a style = "color: white" href = "#">Chính sách bảo mật</a></p>
+                <p><a style = "color: white" href = "#">Miễn trừ trách nhiệm</a></p>
+              </div>
+            </div>
+            <!-- Về chúng tôi -->
+            <div class="col-lg-3 col-md-6 footer-links">
+              <img class = "text-center" src = "assets/imgs/logo2.png" width="180" height="80">
+              <!-- <h4>Giới thiệu về chúng tôi</h4> -->
+              <br>
+              <br>
+              <p style="text-align: justify;">Hãy đến và khám phá không gian xanh tươi mới tại Leaflife, nơi mà cây cảnh không chỉ là sản phẩm,
+                 mà còn là nguồn năng lượng tích cực cho cuộc sống hàng ngày của bạn.</p>
+              <div class="social-links d-flex">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+    
+            <!-- Địa chỉ -->
+            <div class="col-lg-3 col-md-6 d-flex">
+              <i class="bi bi-geo-alt icon"></i>
+              <div>
+                <h4>Địa chỉ</h4>
+                <p>
+                  12 Chùa Bộc, Quan Trung, Hà Nội<br>
+                  <br>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6019455190976!2d105.8258472108518!3d21.00858748839037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac8041a9648d%3A0xe487dd495fdfd676!2zMTIgUC4gQ2jDuWEgQuG7mWMsIFF1YW5nIFRydW5nLCDEkOG7kW5nIMSQYSwgSMOgIE7hu5lpLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1700671029212!5m2!1sen!2s" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- Copyright End -->
+        <div class="container">
+          <div class="credits">
+            Designed by <a href="https://bootstrapmade.com/">Nhóm 5</a>
+          </div>
+        </div>
+      </footer>
+
 
 
 
@@ -426,6 +386,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src = "js/checkout.js"></script>
     </body>
 
 </html>
