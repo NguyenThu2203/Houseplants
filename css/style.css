@@ -515,6 +515,22 @@
 .footer .footer-item p.mb-4 {
     line-height: 35px;
 }***/
+/* about us */
+.sec-halfs .half-content > div {
+    width: 50%;
+}
+.sec-halfs .half-content .img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    @media (max-width: 991.98px) {
+      .sec-halfs .half-content .img {
+        height: 450px; } }
+.sec-halfs .half-content .text {
+    padding: 90px; }
+
+
 /*** Footer End ***/
 .footer {
     font-size: 14px;
