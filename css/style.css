@@ -516,6 +516,10 @@
     line-height: 35px;
 }***/
 /* about us */
+.section .heading {
+    font-size: 30px;
+    font-weight: 700;
+}
 .sec-halfs .half-content > div {
     width: 50%;
 }
@@ -527,10 +531,18 @@
     @media (max-width: 991.98px) {
       .sec-halfs .half-content .img {
         height: 450px; } }
+.sec-halfs .half-content .heading {
+            font-weight: 600;
+        }
 .sec-halfs .half-content .text {
     padding: 90px; }
-
-
+.sec-features {
+    background-color: #daf8d4;
+}
+.section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
 /*** Footer End ***/
 .footer {
     font-size: 14px;
