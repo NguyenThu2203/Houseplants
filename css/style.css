@@ -515,6 +515,56 @@
 .footer .footer-item p.mb-4 {
     line-height: 35px;
 }***/
+/* about us */
+.section .heading {
+    font-size: 30px;
+    font-weight: 700;
+}
+.sec-halfs .half-content > div {
+    width: 50%;
+}
+.sec-halfs .half-content .img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    @media (max-width: 991.98px) {
+      .sec-halfs .half-content .img {
+        height: 450px; } }
+.sec-halfs .half-content .heading {
+            font-weight: 600;
+        }
+.sec-halfs .half-content .text {
+    padding: 90px; }
+.sec-features {
+    background-color: #daf8d4;
+}
+.section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.sec-features .feature [class^="bi-"] {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 60px;
+    flex: 0 0 60px;
+    font-size: 50px;
+    position: relative;
+    margin-right: 10px; }
+.sec-features .feature [class^="bi-"]:before {
+    color: #fff;
+    z-index: 2;
+    position: relative;
+}
+.sec-features .feature [class^="bi-"]:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: -10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(77, 76, 125, 0.1);
+}
 /*** Footer End ***/
 .footer {
     font-size: 14px;
@@ -602,4 +652,17 @@
   .footer .credits a {
     color: #fff;
   }
+
+    .zoom-container {
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .zoom-img {
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .zoom-img:hover {
+        transform: scale(1.2); /* Tăng kích thước ảnh khi trỏ vào */
+    }
 
