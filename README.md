@@ -7,7 +7,7 @@
 | Họ và tên              | Mã sinh viên | Chức vụ        | 
 | ---------------------- | ------------ | -------------- | 
 | Thái Thu Huyền         |              | Nhóm trưởng    | 
-| Nguyễn Thị Thu Hường   |              |                | 
+| Nguyễn Thị Thu Hường   | 24A4043057   |                | 
 | Nguyễn Thị Hà Thu      | 24A4041443   |                | 
 | Vũ Thị Thương          | 24A4040521   |                | 
 
