@@ -7,9 +7,9 @@
 | Họ và tên              | Mã sinh viên | Chức vụ        | 
 | ---------------------- | ------------ | -------------- | 
 | Thái Thu Huyền         |              | Nhóm trưởng    | 
-| Nguyễn Thị Thu Hường   |              |                | 
+| Nguyễn Thị Thu Hường   | 24A4043057   |                | 
 | Nguyễn Thị Hà Thu      | 24A4041443   |                | 
-| Vũ Thị Thương          |              |                | 
+| Vũ Thị Thương          | 24A4040521   |                | 
 
 ###  Giới thiệu đề tài
 Cây có vai trò rất quan trọng đối với cuộc sống của mỗi con người. Tác dụng của cây như là cung cấp oxi, làm sạch không khí, ... Cây ngày nay càng được sử dụng với mục đích trang trí, làm đẹp cảnh quan trong nhà, cơ quan, ... Cây được ưa chuộng hơn bởi nhiều đối tượng khách hàng từ học sinh, sinh viên đến công sở. 
