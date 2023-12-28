@@ -288,7 +288,7 @@
 /*** service Start ***/
 .service .service-item .service-content {
     position: relative;
-    width: 250px; 
+    width: 180px; 
     height: 130px; 
     top: -50%; 
     left: 50%; 
@@ -499,23 +499,6 @@
     border-bottom: 2px solid var(--bs-secondary) !important;
 }
 /*** Single Page End ***/
-
-
-/*** Footer Start 
-.footer .footer-item .btn-link {
-    line-height: 35px;
-    color: rgba(255, 255, 255, .5);
-    transition: 0.5s;
-}
-
-.footer .footer-item .btn-link:hover {
-    color: var(--bs-secondary) !important;
-}
-
-.footer .footer-item p.mb-4 {
-    line-height: 35px;
-}***/
-/* about us */
 .section .heading {
     font-size: 30px;
     font-weight: 700;
@@ -565,6 +548,175 @@
     border-radius: 50%;
     background: rgba(77, 76, 125, 0.1);
 }
+
+
+/* Blog */
+.col-lg-8 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 66.66667%;
+}
+.col-lg-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 33.33333%;
+}
+.posts-entry .blog-entry-search-item {
+    margin-bottom: 30px;
+}
+.d-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+.posts-entry .blog-entry-search-item .img-link img {
+    margin-bottom: 0;
+    border-radius: 10px;
+}
+.posts-entry .blog-entry-search-item .img-link {
+        width: 280px;
+        border-radius: 0;
+}
+.posts-entry .blog-entry .img-link {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.sidebar {
+    padding-left: 5em;
+}
+.sidebar-box {
+    margin-bottom: 4em;
+    font-size: 15px;
+    width: 100%;
+    float: left;
+    background: #fff;
+}
+.comment-wrap .heading, .search-result-wrap .heading {
+    font-size: 18px;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.post-entry-sidebar ul, .post-entry-footer ul {
+    padding: 0;
+    margin: 0;
+}
+.post-entry-sidebar ul li, .post-entry-footer ul li {
+    list-style: none;
+    padding: 0 0 20px 0;
+    margin: 0 0 20px 0;
+}
+.post-entry-sidebar ul li a, .post-entry-footer ul li a {
+    display: table;
+    color: #116e4a;
+}
+.post-entry-sidebar ul li a img, .post-entry-sidebar ul li a .text, .post-entry-footer ul li a img, .post-entry-footer ul li a .text {
+    display: table-cell;
+    vertical-align: middle;
+}
+.post-entry-sidebar ul li a .text h4, .post-entry-sidebar ul li a .text .h4, .post-entry-footer ul li a .text h4, .post-entry-footer ul li a .text .h4 {
+    font-size: 18px;
+}   
+ h4, .h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.post-entry-sidebar ul li a img, .post-entry-sidebar ul li a .text, .post-entry-footer ul li a img, .post-entry-footer ul li a .text {
+    display: table-cell;
+    vertical-align: middle;
+}
+.post-entry-sidebar ul li a img, .post-entry-footer ul li a img {
+    width: 90px;
+}
+.categories, .sidelink {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+.sidebar-box *:last-child {
+    margin-bottom: 0;
+}
+.categories li, .sidelink li {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted gray("300");
+    list-style: none;
+}
+.categories li a, .sidelink li a {
+    display: block;
+    font-size: 16px;
+}
+.categories li a span, .sidelink li a span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #ccc;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+.tags {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+.tags li {
+    padding: 0;
+    margin: 0 4px 4px 0;
+    float: left;
+    display: inline-block;
+}
+.tags li a {
+    float: left;
+    display: block;
+    border-radius: 4px;
+    padding: 2px 6px;
+    color: gray;
+    background: #f2f2f2;
+}
+.custom-pagination span, .custom-pagination a {
+    text-align: center;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+}
+.custom-pagination a {
+    background: #116e4a;
+    color: #fff;
+}
+
+/*** Footer Start 
+.footer .footer-item .btn-link {
+    line-height: 35px;
+    color: rgba(255, 255, 255, .5);
+    transition: 0.5s;
+}
+
+.footer .footer-item .btn-link:hover {
+    color: var(--bs-secondary) !important;
+}
+
+.footer .footer-item p.mb-4 {
+    line-height: 35px;
+}***/
+/* about us */
+
+
 /*** Footer End ***/
 .footer {
     font-size: 14px;
