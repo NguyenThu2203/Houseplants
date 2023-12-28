@@ -49,7 +49,7 @@
                                 <div class="form-group mb-3">
 									<label for="fullname" class="form-label">Tên người dùng<sup class = "text-danger">*</sup></label>
 									<div class="field">
-										<span><i class="fa-duotone fa-user"></i></span>
+										<span><i class="fas fa-user fa-1x"></i></span>
 										<input type="text" class="form-control" name="email" id="username" placeholder="Nhập tên người dùng" required>
 									</div>
                                     <p id = "errorMessageUser" class = "text-danger"></p>
@@ -70,10 +70,11 @@
 									</div>
                                     <p id = "errorMessagePassword" class = "text-danger"></p>
                                     <div class="form-group mb-3 mt-3">
-                                        <label for="confirm" class="form-label">Xác nhận mật khẩu <sup class = "text-danger">*</sup></label>
+                                        <label for="confirmpassword" class="form-label">Xác nhận mật khẩu <sup class = "text-danger">*</sup></label>
                                         <div class="field">
                                             <span><i class="fas fa-lock"></i></span>
-                                            <input type="password" class="form-control" name="password" id="password" placeholder="Xác nhận mật khẩu">
+                                            <input type="password" class="form-control" name="password" id="confirm" placeholder="Xác nhận mật khẩu">
+                                            <p id="errorMessageConfirm" class = "text-danger"></p>
                                         </div>
 								</div>
                                 <!-- Nút Submit -->
@@ -96,9 +97,10 @@
     function validateForm(){
         var username = document.getElementById("username").value; 
         var password = document.getElementById("password").value; 
+        var confirm = document.getElementById('confirm').value; 
         var errorMessageUser = document.getElementById("errorMessageUser");
         var errorMessagePassword= document.getElementById("errorMessagePassword");
-         
+        var errorMessageConfirm = document.getElementById('errorMessageConfirm');
     
         if(username.trim().length < 4){
             errorMessageUser.innerText = 'Tên đăng nhập phải dài hơn 4 kí tự'; 
@@ -108,8 +110,12 @@
             errorMessagePassword.innerText = "Mật khẩu phải dài 6 kí tự"; 
             return false; 
         }
+        if(password != confirm ){
+            errorMessagePassword.innerText = "Mật khẩu xác nhận không trùng với mật khẩu đã đặt"; 
+            return false; 
+        }
         errorMessageUser.innerText = ""; 
-        errorMessagePassword.innerText = ""; 
+        errorMessageConfirm.innerText = ""; 
         return true; 
     }
 </script>
