@@ -1,4 +1,66 @@
 
+.nenmodal .nenmodal2 {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    z-index:1;
+    display:none;
+}
+
+.nenmodal .ndmodal {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background:#fff;
+    width:600px;
+    z-index:2;
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+    font-family:"Open Sans",sans-serif;
+    border-radius:20px;
+    display: block;
+    position: fixed;
+    box-shadow:0px 0px 10px #111;
+    }
+    @media (max-width: 700px) {
+    .nenmodal .ndmodal {width:90%;}
+    }
+    /* CSS bao bọc của nút tắt Modal */
+    .nenmodal .closemodal {
+    text-align:center;
+    margin-top:-40px;
+    margin-bottom:10px;
+    }
+    /* CSS tieu de của Modal */
+    .titlemodal{
+    font-weight:bold;
+    font-size:20px;
+    margin-bottom:10px;
+    }
+    /* CSS nút tắt modal */
+    .closemodal button{
+    width:40px;
+    height:40px;
+    font-size:30px;
+    padding:0px;
+    border-radius:100%;
+    background:#333;
+    color:#fff;
+    border:none;
+    }
+    .nenmodal.active .nenmodal2 {
+    display:block;
+    }
+    /* CSS hiệu ứng hiển thị Modal */
+    .nenmodal.active .ndmodal {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+    }
 
 
 
@@ -564,7 +626,7 @@
     background-color: #daf8d4;
 }
 .section {
-    padding-top: 4rem;
+    padding-top: 2rem;
     padding-bottom: 4rem;
 }
 .sec-features .feature [class^="bi-"] {
@@ -592,18 +654,6 @@
 
 
 /* Blog */
-.col-lg-8 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-    width: 66.66667%;
-}
-.col-lg-4 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-    width: 33.33333%;
-}
 .posts-entry .blog-entry-search-item {
     margin-bottom: 30px;
 }
@@ -717,7 +767,7 @@
 .tags li {
     padding: 0;
     margin: 0 4px 4px 0;
-    float: left;
+    /* float: left; */
     display: inline-block;
 }
 .tags li a {
@@ -740,7 +790,101 @@
     background: #116e4a;
     color: #fff;
 }
-
+.comment-list {
+    padding: 0;
+    margin: 0;
+}
+.comment-list li {
+    padding: 0;
+    margin: 0 0 30px 0;
+    float: left;
+    width: 100%;
+    clear: both;
+    list-style: none;
+}
+.comment-list li .vcard {
+    width: 80px;
+    float: left;
+}
+.comment-list li .vcard img {
+    width: 50px;
+    border-radius: 50%;
+}
+.comment-list li .comment-body {
+    float: right;
+    width: calc(100% - 80px);
+}
+.comment-list li .comment-body h3, .comment-list li .comment-body .h3 {
+    font-size: 20px;
+    color: #000;
+}
+img, svg {
+    vertical-align: middle;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.comment-list li .comment-body .meta {
+    text-transform: none;
+    color: #ccc;
+}
+.comment-list li .comment-body .reply {
+    padding: 3px 10px;
+    background: #f2f2f2;
+    color: #000;
+    font-size: 13px;
+}
+.comment-list .children {
+    padding: 50px 0 0 40px;
+    margin: 0;
+    float: left;
+    width: 100%;
+}
+.comment-form-wrap {
+    clear: both;
+}
+.form-control {
+    height: 54px;
+    border-color: rgba(0, 0, 0, 0.1);
+    background-color: transparent !important;
+    margin-bottom: 10px;
+}
+textarea {
+    height: auto !important;
+}
+.search-form-wrap {
+    margin-bottom: 5em;
+    display: block;
+}
+.bio img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+.bio .bio-body h2, .bio .bio-body .h2 {
+    color: #000;
+    font-size: 20px;
+}
+.sidebar-box .heading {
+    font-size: 18px;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.posts-entry.posts-entry-sm .blog-entry h2, .posts-entry.posts-entry-sm .blog-entry .h2 {
+    font-size: 18px;
+}
+.posts-entry .blog-entry h2, .posts-entry .blog-entry .h2 {
+    line-height: 1.3;
+    font-size: 26px;
+}
+.read-more {
+    border-bottom: 2px solid #214252;
+}
 /*** Footer Start 
 .footer .footer-item .btn-link {
     line-height: 35px;
@@ -756,6 +900,8 @@
     line-height: 35px;
 }***/
 /* about us */
+
+
 
 
 /*** Footer End ***/
@@ -884,6 +1030,25 @@
     .rating input:checked ~ label,
     .rating input:checked ~ label ~ label {
         color: #ffcc00;
+    }
+
+ #custom-box {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    #close-button {
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
     }
 
 

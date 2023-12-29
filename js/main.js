@@ -161,6 +161,7 @@ $(document).ready(function () {
         $(this).closest('tr').hide();
     });
 });  
+<<<<<<< HEAD
 //hiển thị mã giảm giá đã nhập
 
 function chon(button) {
@@ -172,4 +173,17 @@ function chon(button) {
 
     // Thực hiện các hành động khác nếu cần
   }
+=======
+
+function showCustomBox() {
+    var customBox = document.getElementById('custom-box');
+    customBox.style.display = 'block';
+}
+
+function hideCustomBox() {
+    var customBox = document.getElementById('custom-box');
+    customBox.style.display = 'none';
+}
+
+>>>>>>> 99d9ee4d41b140ff91b50cb02e4af828e3880106
   

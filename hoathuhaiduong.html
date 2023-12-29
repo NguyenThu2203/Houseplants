@@ -156,10 +156,10 @@
                                 </div>
                             </div>
                             <div>
-                                <a href="#" class="btn bg-success p-2 btn-sm themgiohang text-white">
-                                   THÊM VÀO GIỎ HÀNG
-                                </a>
-                                <a href="#!" class="mx-2 btn p-2 btn-sm bg-danger muangay text-white">
+                                <button type = "submit" class="btn btn-primary btn-sm themvaogiohang text-white">
+                                    + Thêm vào giỏ
+                                 </button>
+                                <a href="checkout.html" class="mx-2 btn p-2 btn-sm bg-danger muangay text-white">
                                    MUA NGAY
                                  </a>
                                 </div>
@@ -289,7 +289,40 @@
                                                 <label for="star1"></label>
                                             </div>
                                         </div>
-                                        <a href="#" class="btn border border-secondary text-primary rounded-pill px-4 py-3"> Gửi nhận xét</a>
+                                        <a href="#" class="btn border border-secondary text-primary rounded-pill px-4 py-3" onclick="showCustomBox()" > Gửi nhận xét</a>
+                                        <div id="custom-box">
+                                            <span id="close-button" onclick="hideCustomBox()">x</span>
+                                            <p style="text-align: center;"><strong>LeaLife cảm ơn bạn đã Feedback!</strong> </p>
+                                            <div class="đánh giá">
+                                                <p class="date" style="font-size: 14px;">24/08/2023</p>
+                                                <div class="Tên">
+                                                    <h5> Vũ Thị Thương</h5>
+                                                    <div class="rating">
+                                                    <i class="fa fa-star text-secondary"></i>
+                                                    <i class="fa fa-star text-secondary"></i>
+                                                    <i class="fa fa-star text-secondary"></i>
+                                                    <i class="fa fa-star text-secondary"></i>
+                                                    <i class="fa fa-star text-secondary"></i>
+                                                    </div>
+                                                </div>
+                                                <p> Cây đẹp, chắc chắn, không bị sâu lá hay hỏng hoa</p>
+                                            </div> <br>
+
+                                            <div class="đánh giá">
+                                                <p class="date" style="font-size: 14px;">24/08/2023</p>
+                                                <div class="Tên">
+                                                    <h5> Nguyễn Thị Thu Hường</h5>
+                                                    <div class="rating">
+                                                    <i class="fa fa-star-half-alt text-secondary"></i>
+                                                    <i class="fa fa-star text-secondary"></i>
+                                                    <i class="fa fa-star text-secondary"></i>
+                                                    <i class="fa fa-star text-secondary"></i>
+                                                    <i class="fa fa-star text-secondary"></i>
+                                                    </div>
+                                                </div>
+                                                <p> Cây đẹp, chắc chắn, dịch vụ chăm sóc khách hàng chu đáo </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -659,6 +692,7 @@
 
 <!-- Template Javascript -->
 <script src="js/main.js"></script>
+<script scr = "js/themvaogiohang.js"></script>
 </body>
 
 </html>

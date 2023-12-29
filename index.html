@@ -26,7 +26,10 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">  
+        <link href="css/style.css" rel="stylesheet"> 
+        
+        <!-- Thêm icon cho trang web -->
+        <link rel="shortcut icon" type="image/png" href="trangchu/icon2.png"/>
     </head>
 
     <body>
@@ -54,7 +57,7 @@
             <div class="container-fluid px-0">
                 <div class="row">
                   <a href="index.html" class="text-center">
-                    <img class = "text-center img-fluid mt-3" src="assets/imgs/logo2.png" alt="Logo LeafLife" width="150" height="100">
+                    <img class = "text-center img-fluid mt-4" src="assets/imgs/logo2.png" alt="Logo LeafLife" width="150" height="100">
                   </a>
                 </div>
               </div>
@@ -108,8 +111,8 @@
                     </div>
                     <div class="modal-body d-flex align-items-center">
                         <div class="input-group w-75 mx-auto d-flex">
-                            <input type="search" class="form-control p-3" placeholder="Tìm kiếm sản phẩm ..." aria-describedby="search-icon-1">
-                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                            <input type="search" id = "searchInput" class="form-control p-3" placeholder="Tìm kiếm sản phẩm ..." aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><button type = "submit" class = "b"><i class="fa fa-search"></i></button></span>
                         </div>
                     </div>
                 </div>
@@ -122,12 +125,25 @@
             <div class="container py-5">
                 <div class="row g-5 align-items-center">
                     <div class="col-md-12 col-lg-6">
-                        <img src = "trangchu/merryxmas.png" width="500" height="220" class = "img-fluid ms-4">
-                        <div class="position-relative mx-auto">
+                        <div class="row">
+                            <img src = "trangchu/merryxmas.png" width="500" height="220" class = "img-fluid ms-4">
+
+                        </div>
+                        <div class="col-md-12 position-relative mx-auto">
                             <br>
-                            <a href = "caytrangtri1"><button type="submit" class="btn btn-primary border-2 border-secondary py-3 px-4  rounded-pill text-white" >Sản phẩm giảm giá</button></a>
-                            <a href = "trang2tcsp.html"><button type="submit" class="btn btn-primary border-2 border-secondary py-3 px-4 rounded-pill text-white " >Sản phẩm nổi bật</button></a>
-                            <a href = "tatcasp.html"><button type="submit" class="btn btn-primary border-2 border-secondary py-3 px-4  rounded-pill text-white" >Tất cả sản phẩm</button></a>
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4">
+                                <a href = "caytrangtri1"><button type="submit" class="btn btn-primary border-2 border-secondary py-3 px-3  rounded-pill text-white" >Sản phẩm giảm giá</button></a>
+                            </div>
+                            <div class="col-xl-4 col-lg-4">
+                                <a href = "trang2tcsp.html"><button type="submit" class="btn btn-primary border-2 border-secondary py-3 px-3 rounded-pill text-white " >Sản phẩm nổi bật</button></a>
+                            </div>
+                            <div class="col-xl-4 col-lg-4">
+                                <a href = "tatcasp.html"><button type="submit" class="btn btn-primary border-2 border-secondary py-3 px-3  rounded-pill text-white" >Tất cả sản phẩm</button></a>
+                            </div>
+                            
+                        </div>
+                            
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-6">
@@ -203,6 +219,204 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
+<<<<<<< HEAD
+=======
+                                                    <a href="cayhuyhoang.html"><img src="assets/imgs/CT_cayhuyhoang.jpg" class="img-fluid w-100 rounded-top" alt=""></a>
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Cây trang trí</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4><a href="cayhuyhoang.html">Cây Huy Hoàng</a></h4>
+                                                    <p>Cây trang trí</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">55.000 VND</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>Thêm</a>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-decoration-line-through text-muted">60.000 VND</p>
+                                                     </div>
+                                                     <div>
+                                                        <!-- rating -->
+                                                        <small class="text-warning">
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-half"></i>
+                                                        </small>
+                                                        <span class="text-muted small">4.5(25)</span>
+                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Cây 2 -->
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <a href="cayhongmon.html"><img src="assets/imgs/CT_cautramdat.jpg" class="img-fluid w-100 rounded-top" alt=""></a>
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Cây trang trí</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4><a href="cayhongmon.html">Cau Tiểu Trâm Đất</a></h4>
+                                                    <p>Cây trang trí</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">75.000 VND</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>Thêm</a>
+                                                    </div>
+                                                    
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-decoration-line-through text-muted">80.000 VND</p>
+                                                    </div>
+
+                                                    <div>
+                                                        <!-- rating -->
+                                                        <small class="text-warning">
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-half"></i>
+                                                        </small>
+                                                        <span class="text-muted small">4.5(25)</span>
+                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Cây 3 -->
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <a href="cayhuyhoang.html"><img src="assets/imgs/CT_cayluoiho.jpg" class="img-fluid w-100 rounded-top" alt=""></a>
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Cây trang trí</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4><a href="cayhuyhoang.html">Cây Lưỡi Hổ</a></h4>
+                                                    <p>Cây trang trí</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">55.000 VND</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>Thêm</a>
+                                                        <p class="text-decoration-line-through text-muted">68.000 VND</p>
+                                                    </div>
+                                                    <div>
+                                                        <!-- rating -->
+                                                        <small class="text-warning">
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                        </small>
+                                                        <span class="text-muted small">5(50)</span>
+                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Cây 4 -->
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <a href="caythongNortfolk.html"><img src="assets/imgs/CT_caykimtien.jpg" class="img-fluid w-100 rounded-top" alt=""></a>
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Cây trang trí</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4><a href="caythongNortfolk.html">Cây Kim Tiền</a></h4>
+                                                    <p>Cây trang trí</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">70.000 VND</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>Thêm</a>
+                                                        <p class="text-decoration-line-through text-muted">83.000 VND</p>
+                                                    </div>
+                                                    <div>
+                                                        <!-- rating -->
+                                                        <small class="text-warning">
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-half"></i>
+                                                        </small>
+                                                        <span class="text-muted small">3.5(74)</span>
+                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Cây 5 -->
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <a href="#"><img src="assets/imgs/CT_caymonstera.jpg" class="img-fluid w-100 rounded-top" alt=""></a>
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Cây trang trí</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4><a href="caythongNortfolk.html">Trầu Bà Lá Xẻ</a></h4>
+                                                    <p>Cây trang trí</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">80.000 VND</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>Thêm</a>
+                                                        <p class="text-decoration-line-through text-muted">90.000 VND</p>
+                                                    </div>
+                                                    <div>
+                                                        <!-- rating -->
+                                                        <small class="text-warning">
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-half"></i>
+                                                        </small>
+                                                        <span class="text-muted small">4.5(20)</span>
+                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Cây 6 -->
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <a href="#"><img src="assets/imgs/CT_traubadevuong.jpg" class="img-fluid w-100 rounded-top" alt=""></a>
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Cây trang trí</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4><a href="#">Trầu bà đế vương</a></h4>
+                                                    <p>Cây trang trí</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">60.000 VND</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>Thêm</a>
+                                                        <p class="text-decoration-line-through text-muted">81.000 VND</p>
+                                                    </div>
+                                                    <div>
+                                                        <!-- rating -->
+                                                        <small class="text-warning">
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-half"></i>
+                                                        </small>
+                                                        <span class="text-muted small">4.5(189)</span>
+                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tất cả sản phẩm End -->
+
+                        <!-- Cây trang trí Start-->
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <!-- Cây 1 -->
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7e66681d210b4d852d6a854a55d726f21c9100a5
+>>>>>>> 99d9ee4d41b140ff91b50cb02e4af828e3880106
                                                     <a href="#"><img src="assets/imgs/CT_cayhuyhoang.jpg" class="img-fluid w-100 rounded-top" alt=""></a>
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Cây trang trí</div>
@@ -372,6 +586,301 @@
                                                 </div>
                                             </div>
                                         </div>
+<<<<<<< HEAD
+=======
+
+                                        <!-- Cây 7 -->
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <a href="#"><img src="assets/imgs/CT_caymongrong.jpg" class="img-fluid w-100 rounded-top" alt=""></a>
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Cây trang trí</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4><a href="#">Cây Móng Rồng</a></h4>
+                                                    <p>Cây trang trí</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">55.000 VND</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>Thêm</a>
+                                                        <p class="text-decoration-line-through text-muted">81.000 VND</p>
+                                                    </div>
+                                                    <div>
+                                                        <!-- rating -->
+                                                        <small class="text-warning">
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                        </small>
+                                                        <span class="text-muted small">5(45)</span>
+                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Cây 8 -->
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <a href="#"><img src="assets/imgs/CT_caytruongsinh.jpg" class="img-fluid w-100 rounded-top" alt=""></a>
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Cây trang trí</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4><a href="#">Cây Trường Sinh</a></h4>
+                                                    <p>Cây trang trí</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">50.000 VND</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>Thêm</a>
+                                                        <p class="text-decoration-line-through text-muted">82.000 VND</p>
+                                                    </div>
+                                                    <div>
+                                                        <!-- rating -->
+                                                        <small class="text-warning">
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                        </small>
+                                                        <span class="text-muted small">4.5(21)</span>
+                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tất cả sản phẩm End -->
+                
+                        <!-- Cây trang trí Start-->
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <!-- Cây 1 -->
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <a href="caythongNortfolk.html"><img src="assets/imgs/CK_nortfolk1.jpg" class="img-fluid w-100 rounded-top" alt=""></a>
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Cây lá kim</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4><a href="caythongNortfolk.html">Cây thông Nortfolk</a></h4>
+                                                    <p>Cây lá kim</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">55.000 VND</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>Thêm</a>
+                                                    </div>
+                                                    <div>
+                                                        <!-- rating -->
+                                                        <small class="text-warning">
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-half"></i>
+                                                        </small>
+                                                        <span class="text-muted small">4.5(145)</span>
+                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Cây 2 -->
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <a href="#"><img src="assets/imgs/CK_cat.jpg" class="img-fluid w-100 rounded-top" alt=""></a>
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Cây lá kim</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4><a href="#">Cây Dypsis Lutescens</a></h4>
+                                                    <p>Cây lá kim</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">99.000 VND</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>Thêm</a>
+                                                    </div>
+                                                    <div>
+                                                        <!-- rating -->
+                                                        <small class="text-warning">
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-half"></i>
+                                                        </small>
+                                                        <span class="text-muted small">4.5(25)</span>
+                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Cây 3 -->
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <a href="#"><img src="assets/imgs/CK_parlor.jpg" class="img-fluid w-100 rounded-top" alt=""></a>
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Cây lá kim</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4><a href="#">Cây Parlor Palm</a></h4>
+                                                    <p>Cây lá kim</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">70.000 VND</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>Thêm</a>
+                                                    </div>
+                                                    <div>
+                                                        <!-- rating -->
+                                                        <small class="text-warning">
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                        </small>
+                                                        <span class="text-muted small">5(50)</span>
+                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Cây 4 -->
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <a href="#"><img src="assets/imgs/CK_dried2.jpg" class="img-fluid w-100 rounded-top" alt=""></a>
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Cây lá kim</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4><a href="#">Cây bông lau</a></h4>
+                                                    <p>Cây lá kim</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">45.000 VND</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>Thêm</a>
+                                                    </div>
+                                                    <div>
+                                                        <!-- rating -->
+                                                        <small class="text-warning">
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-half"></i>
+                                                        </small>
+                                                        <span class="text-muted small">3.5(74)</span>
+                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Cây 5 -->
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <a href="#"><img src="assets/imgs/CT_Cayluoiho1.jpg" class="img-fluid w-100 rounded-top" alt=""></a>
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Cây trang trí</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4><a href="#">Cây lưỡi hổ</a></h4>
+                                                    <p>Cây trang trí</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">55.000 VND</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>Thêm</a>
+                                                    </div>
+                                                    <div>
+                                                        <!-- rating -->
+                                                        <small class="text-warning">
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-half"></i>
+                                                        </small>
+                                                        <span class="text-muted small">4.5(20)</span>
+                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Cây 6 -->
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <a href="#"><img src="assets/imgs/CQ_Grape.jpg" class="img-fluid w-100 rounded-top" alt=""></a>
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Cây ăn quả</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4><a href="#">Cây nho</a></h4>
+                                                    <p>Cây ăn quả</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">99.000 VND</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>Thêm</a>
+                                                    </div>
+                                                    <div>
+                                                        <!-- rating -->
+                                                        <small class="text-warning">
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-half"></i>
+                                                        </small>
+                                                        <span class="text-muted small">4.5(189)</span>
+                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Cây 7 -->
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <a href="#"><img src="assets/imgs/CT_Cayhongmon1.jpg" class="img-fluid w-100 rounded-top" alt=""></a>
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Cây trang trí</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4><a href="#">Cây hồng môn</a></h4>
+                                                    <p>Cây trang trí</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">109.000 VND</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>Thêm</a>
+                                                    </div>
+                                                    <div>
+                                                        <!-- rating -->
+                                                        <small class="text-warning">
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                        </small>
+                                                        <span class="text-muted small">5(45)</span>
+                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Cây 8 -->
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <a href="#"><img src="assets/imgs/CT_Caytrucphuquy2.jpg" class="img-fluid w-100 rounded-top" alt=""></a>
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Cây trang trí</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4><a href="#">Cây trúc phú quý</a></h4>
+                                                    <p>Cây trang trí</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">95.000 VND</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>Thêm</a>
+                                                    </div>
+                                                    <div>
+                                                        <!-- rating -->
+                                                        <small class="text-warning">
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                           <i class="bi bi-star-fill"></i>
+                                                        </small>
+                                                        <span class="text-muted small">4.5(21)</span>
+                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+>>>>>>> 99d9ee4d41b140ff91b50cb02e4af828e3880106
                                     </div>
                                 </div>
                             </div>
@@ -473,7 +982,7 @@
                                         <!-- Cây 4 -->
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
-                                                <div class="fruite-img">
+                                                <div classp="fruite-img">
                                                     <a href="#"><img src="assets/imgs/CT_caykimtien.jpg" class="img-fluid w-100 rounded-top" alt=""></a>
                                                 </div>
                                                 <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Cây ăn quả</div>
@@ -797,7 +1306,10 @@
                                                 </div>
                                             </div>
                                         </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 99d9ee4d41b140ff91b50cb02e4af828e3880106
                                     </div>
                                 </div>
                             </div>
