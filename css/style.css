@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+
+
+/*trang gio hang*/
+    .apdung {
+        border: 1px solid #797c8195; /* Màu và độ dày của border */
+        border-radius: 0px 5px 5px 0px; /* Độ cong của góc border */
+        padding: 10px 20px; /* Khoảng cách giữa nội dung và border */
+        background-color: #93979ad4; /* Màu nền của nút */
+        color: #ffffff; /* Màu chữ của nút */
+    }
+=======
 /* Thanh toán popup */
 .nenmodal .nenmodal2 {
     position:fixed;
@@ -63,6 +75,7 @@
     }
 
 
+>>>>>>> 040a5d4828cb8cbe039851f26dfa41e83b7d9943
 
 /*mã giảm giá*/
 .discountbtn {
