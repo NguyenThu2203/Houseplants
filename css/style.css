@@ -821,7 +821,31 @@
 img, svg {
     vertical-align: middle;
 }
-/* Blog single */
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.comment-list li .comment-body .meta {
+    text-transform: none;
+    color: #ccc;
+}
+.comment-list li .comment-body .reply {
+    padding: 3px 10px;
+    background: #f2f2f2;
+    color: #000;
+    font-size: 13px;
+}
+.comment-list .children {
+    padding: 50px 0 0 40px;
+    margin: 0;
+    float: left;
+    width: 100%;
+}
+.comment-form-wrap {
+    clear: both;
+}
 
 
 /*** Footer Start 
