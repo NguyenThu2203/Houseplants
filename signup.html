@@ -41,8 +41,8 @@
 				<div class="col-xl-6 form-bg bg-light">
 					<div class="form-container">
 						<div class="form-header text-center">
-							<a href="#"><img class="logo" src="trangchu/logo2.png" alt="logo" class = "img-fluid" width="300" height="150"></img></a>
-							<h2 class="text-danger">ĐĂNG KÝ</h2>
+							<a href="#"><img class="logo" src="trangchu/logo2.png" alt="logo" class = "img-fluid" width="400" height="130"></img></a>
+							<h2 class="text-danger mt-3">ĐĂNG KÝ</h2>
 						</div>
 						<div class="form-body">
 							<form action="/" method="POST" onsubmit="return validateForm()">
@@ -74,8 +74,8 @@
                                         <div class="field">
                                             <span><i class="fas fa-lock"></i></span>
                                             <input type="password" class="form-control" name="password" id="confirm" placeholder="Xác nhận mật khẩu">
-                                            <p id="errorMessageConfirm" class = "text-danger"></p>
                                         </div>
+                                        <p id="errorMessageConfirm" class = "text-danger"></p>
 								</div>
                                 <!-- Nút Submit -->
 								<div class="form-group mb-3">
@@ -93,31 +93,6 @@
 	</section>
 
 
-<script>
-    function validateForm(){
-        var username = document.getElementById("username").value; 
-        var password = document.getElementById("password").value; 
-        var confirm = document.getElementById('confirm').value; 
-        var errorMessageUser = document.getElementById("errorMessageUser");
-        var errorMessagePassword= document.getElementById("errorMessagePassword");
-        var errorMessageConfirm = document.getElementById('errorMessageConfirm');
-    
-        if(username.trim().length < 4){
-            errorMessageUser.innerText = 'Tên đăng nhập phải dài hơn 4 kí tự'; 
-            return false; 
-        }
-        if(password.length < 6){
-            errorMessagePassword.innerText = "Mật khẩu phải dài 6 kí tự"; 
-            return false; 
-        }
-        if(password != confirm ){
-            errorMessagePassword.innerText = "Mật khẩu xác nhận không trùng với mật khẩu đã đặt"; 
-            return false; 
-        }
-        errorMessageUser.innerText = ""; 
-        errorMessageConfirm.innerText = ""; 
-        return true; 
-    }
-</script>
+<script src = "js/signup.js"></script>
 </body>
 </html>
