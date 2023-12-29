@@ -148,4 +148,18 @@
     });
 
 })(jQuery);
-
+//mã giảm giá
+$(document).ready(function () {
+    $('.discountbtn').click(function () {
+        $('.discountbtn').css('background-color', '');
+        $(this).css('background-color', '#dd3226');
+    });
+});
+//bớt sản phẩm trong giỏ hàng
+$(document).ready(function () {
+    $('.xoa').click(function () {
+        $(this).closest('tr').hide();
+    });
+});  
+  
+  
