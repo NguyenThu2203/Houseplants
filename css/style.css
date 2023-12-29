@@ -1,82 +1,19 @@
-<<<<<<< HEAD
 
-
-/*trang gio hang*/
-    .apdung {
-        border: 1px solid #797c8195; /* Màu và độ dày của border */
-        border-radius: 0px 5px 5px 0px; /* Độ cong của góc border */
-        padding: 10px 20px; /* Khoảng cách giữa nội dung và border */
-        background-color: #93979ad4; /* Màu nền của nút */
-        color: #ffffff; /* Màu chữ của nút */
+  /*trang gio hang*/
+ 
+  #nhapmakm {
+    padding: 10px; 
+    width: 65%; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+  }
+   #apdung {
+        border: 1px solid #797c8195;
+        border-radius: 0px 5px 5px 0px;
+        padding: 10px 20px; 
+        background-color: #93979ae3; 
+        color: #ffffff; 
     }
-=======
-/* Thanh toán popup */
-.nenmodal .nenmodal2 {
-    position:fixed;
-    top:0px;
-    left:0px;
-    width:100vw;
-    height:100vh;
-    background:rgba(0,0,0,0.7);
-    z-index:1;
-    display:none;
-    }
-    /* CSS bảng nội dung Modal */
-    .nenmodal .ndmodal {
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%) scale(0);
-    background:#fff;
-    width:600px;
-    z-index:2;
-    text-align:center;
-    padding:20px;
-    box-sizing:border-box;
-    font-family:"Open Sans",sans-serif;
-    border-radius:20px;
-    display: block;
-    position: fixed;
-    box-shadow:0px 0px 10px #111;
-    }
-    @media (max-width: 700px) {
-    .nenmodal .ndmodal {width:90%;}
-    }
-    /* CSS bao bọc của nút tắt Modal */
-    .nenmodal .closemodal {
-    text-align:center;
-    margin-top:-40px;
-    margin-bottom:10px;
-    }
-    /* CSS tieu de của Modal */
-    .titlemodal{
-    font-weight:bold;
-    font-size:20px;
-    margin-bottom:10px;
-    }
-    /* CSS nút tắt modal */
-    .closemodal button{
-    width:40px;
-    height:40px;
-    font-size:30px;
-    padding:0px;
-    border-radius:100%;
-    background:#333;
-    color:#fff;
-    border:none;
-    }
-    .nenmodal.active .nenmodal2 {
-    display:block;
-    }
-    /* CSS hiệu ứng hiển thị Modal */
-    .nenmodal.active .ndmodal {
-    transition:all 300ms ease-in-out;
-    transform:translate(-50%,-50%) scale(1);
-    }
-
-
->>>>>>> 040a5d4828cb8cbe039851f26dfa41e83b7d9943
-
 /*mã giảm giá*/
 .discountbtn {
     display: inline-block;

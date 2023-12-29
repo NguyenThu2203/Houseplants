@@ -177,7 +177,6 @@ function hideCustomBox() {
     var customBox = document.getElementById('custom-box');
     customBox.style.display = 'none';
 }
-//thêm gợi ý cho mã
 
 //Hiển thị nội dung đánh giá sản phẩm 
 function showCustomBox() {
@@ -189,4 +188,27 @@ function hideCustomBox() {
     var customBox = document.getElementById('custom-box');
     customBox.style.display = 'none';
 }
+//
+
+document.getElementById('myForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Ngăn chặn hành động mặc định của form
+
+    kiemTraMaGiamGia();
+  });
+
+  function kiemTraMaGiamGia() {
+    var inputMaGiamGia = document.getElementById('nhapmakm').value;
+
+    // Kiểm tra điều kiện của mã giảm giá và hiển thị thông báo
+    if (inputMaGiamGia === 'KM_LeafLife20K') {
+      alert('Mã giảm giá hợp lệ. Giảm 20k cho đơn hàng từ 150K.');
+    } else if (inputMaGiamGia === 'KM_LeafLife10K') {
+      alert('Mã giảm giá hợp lệ. Giảm 10K cho đơn từ 99K.');
+    } else if (inputMaGiamGia === 'KM_LeafLife10%') {
+      alert('Mã giảm giá hợp lệ. Giảm 10% cho khách hàng mới.');
+    } else {
+      alert('Mã giảm giá không tồn tại.');
+    }
+  }
+
 
