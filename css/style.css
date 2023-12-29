@@ -3,7 +3,11 @@
 
 
 
-/*mã giảm giá*/
+/*mã giảm giá
+.coupons {
+    display: flex;
+    justify-content: space-around;
+}*/
 .discountbtn {
     display: inline-block;
     background-color: #d6625a;
