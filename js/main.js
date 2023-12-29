@@ -161,13 +161,21 @@ $(document).ready(function () {
         $(this).closest('tr').hide();
     });
 });  
-//hiển thị mã giảm giá đã nhập
-
+// hiển thị mã km đã chọn
 function chon(button) {
     // Lấy nội dung từ class magiam bên trong nút
     var magiam = button.querySelector('.magiam').innerText;
 
     // Hiển thị nội dung khuyến mãi trong phần tử có id="showmakm"
     document.getElementById('showmakm').innerText = magiam;
-  }
+}
+function showCustomBox() {
+    var customBox = document.getElementById('custom-box');
+    customBox.style.display = 'block';
+}
+function hideCustomBox() {
+    var customBox = document.getElementById('custom-box');
+    customBox.style.display = 'none';
+}
+//thêm gợi ý cho mã
 
