@@ -137,7 +137,7 @@
                                   <p class="mb-0 mt-4">Cây Huy Hoàng</p>
                               </td>
                               <td>
-                                  <p class="mb-0 mt-4">55.000 vnd</p>
+                                <p class="mb-0 mt-4 gia">55.000 <span class="money">vnd</span> </p>
                               </td>
                               <td>
                                   <div class="input-group quantity mt-4" style="width: 100px;">
@@ -155,7 +155,7 @@
                                   </div>
                               </td>
                               <td>
-                                  <p class="mb-0 mt-4">55.000 vnd</p>
+                                <p class="mb-0 mt-4 gia">55.000 <span class="money">vnd</span> </p>
                               </td>
                               <td>
                                   <button class="btn btn-md rounded-circle bg-light border mt-4 xoa" >
@@ -174,7 +174,7 @@
                                   <p class="mb-0 mt-4">Cây Trầu Bà Đế Vương</p>
                               </td>
                               <td>
-                                  <p class="mb-0 mt-4">60.000 vnd</p>
+                                <p class="mb-0 mt-4 gia">60.000 <span class="money">vnd</span> </p>
                               </td>
                               <td>
                                   <div class="input-group quantity mt-4" style="width: 100px;">
@@ -192,7 +192,7 @@
                                   </div>
                               </td>
                               <td>
-                                  <p class="mb-0 mt-4">60.000 vnd</p>
+                                  <p class="mb-0 mt-4 gia">60.000 <span class="money">vnd</span> </p>
                               </td>
                               <td>
                                   <button class="btn btn-md rounded-circle bg-light border mt-4 xoa" >
@@ -210,7 +210,7 @@
                                   <p class="mb-0 mt-4">Hoa Lan Hồ Điệp</p>
                               </td>
                               <td>
-                                  <p class="mb-0 mt-4">70.000 vnd</p>
+                                <p class="mb-0 mt-4 gia">70.000 <span class="money">vnd</span> </p>
                               </td>
                               <td>
                                   <div class="input-group quantity mt-4" style="width: 100px;">
@@ -228,7 +228,7 @@
                                   </div>
                               </td>
                               <td>
-                                  <p class="mb-0 mt-4">70.000 vnd</p>
+                                <p class="mb-0 mt-4 gia">70.000 <span class="money">vnd</span> </p>
                               </td>
                               <td>
                                   <button class="btn btn-md rounded-circle bg-light border mt-4 xoa" >
@@ -238,6 +238,7 @@
                           </tr>
                       </tbody>
                   </table>
+                 <button class="btn btn-secondary rounded-pill text-uppercase ">Quay Lại</button>
               </div>
               </div>
           <!--sản phẩm-->
@@ -246,21 +247,21 @@
             <div class="bg-light rounded">
               <div class="py-4 mb-4 ">
                 <div class="counpons mb-4">
-                <button class="discountbtn" onclick="chon">
-                    <span class="magiam ">KM_LeafLife20K</span>
+                <button class="discountbtn" onclick="chon(this)">
+                    <span class="magiam">KM_LeafLife20K</span>
                     <span class="noidung">Giảm 20k cho đơn hàng từ 150K </span>
                   </button>
-                  <button class="discountbtn"  onclick="chon">
-                    <span class="magiam ">KM_LeafLife10K</span>
+                  <button class="discountbtn"  onclick="chon(this)">
+                    <span class="magiam">KM_LeafLife10K</span>
                     <span class="noidung">Giảm 10K cho đơn từ 99K </span>
                   </button>
-                  <button class="discountbtn" onclick="chon">
+                  <button class="discountbtn" onclick="chon(this)">
                     <span class="magiam">KM_LeafLife10%</span>
                     <span class="noidung">Giảm 10% cho khách hàng mới</span>
                   </button>
               </div>
                 <div class="input-group">
-                  <input type="text" class="form-control border-0 border-bottom rounded " placeholder="Nhập mã giảm giá">
+                  <input type="text" id="nhapmakm" class="form-control border-0 border-bottom rounded " placeholder="Nhập mã giảm giá">
                   <button class="btn btn-secondary rounded-end text-primary" type="button">Áp dụng</button>
                 </div>
                 <div class="p-4">
@@ -270,7 +271,7 @@
                     </div>
                     <div class="d-flex justify-content-between mb-4">
                       <h5 class="mb-0 me-4">Khuyến mãi:</h5>
-                      <p class="mb- me-4">0 vnd</p>
+                      <p class="mb- me-4" id="showmakm">0 vnd</p>
                   </div>
                     <div class="d-flex justify-content-between">
                         <h5 class="mb-0 me-4">Vận chuyển:</h5>

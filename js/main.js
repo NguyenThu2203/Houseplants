@@ -131,7 +131,7 @@
 
 
 
-    // Product Quantity
+    //Số lượng sản phẩm
     $('.quantity button').on('click', function () {
         var button = $(this);
         var oldValue = button.parent().parent().find('input').val();
@@ -161,5 +161,15 @@ $(document).ready(function () {
         $(this).closest('tr').hide();
     });
 });  
-  
+//hiển thị mã giảm giá đã nhập
+
+function chon(button) {
+    // Lấy nội dung từ class magiam bên trong nút
+    var magiam = button.querySelector('.magiam').innerText;
+
+    // Hiển thị nội dung khuyến mãi trong phần tử có id="showmakm"
+    document.getElementById('showmakm').innerText = magiam;
+
+    // Thực hiện các hành động khác nếu cần
+  }
   
