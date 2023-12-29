@@ -161,5 +161,15 @@ $(document).ready(function () {
         $(this).closest('tr').hide();
     });
 });  
-  
+
+function showCustomBox() {
+    var customBox = document.getElementById('custom-box');
+    customBox.style.display = 'block';
+}
+
+function hideCustomBox() {
+    var customBox = document.getElementById('custom-box');
+    customBox.style.display = 'none';
+}
+
   
