@@ -1,16 +1,4 @@
 
-/*
-var spMoiRadioButton = document.getElementById('spmoi');
-        spMoiRadioButton.addEventListener('click', function() {
-            // Lấy tất cả các khối có class "moi"
-            var moiBlocks = document.querySelectorAll('.col:not(.moi)');
-            if (spMoiRadioButton.checked) {
-                // Nếu được chọn, ẩn các khối có class "moi"
-                moiBlocks.forEach(function (block) {
-                    block.style.display = 'none';
-                });
-            }
-        });*/
 
 // hiển thị sản phẩm theo lựa chọn
         var spMoiRadioButton = document.getElementById('spmoi');
