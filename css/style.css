@@ -846,7 +846,15 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .comment-form-wrap {
     clear: both;
 }
-
+.form-control {
+    height: 54px;
+    border-color: rgba(0, 0, 0, 0.1);
+    background-color: transparent !important;
+    margin-bottom: 10px;
+}
+textarea {
+    height: auto !important;
+}
 
 /*** Footer Start 
 .footer .footer-item .btn-link {
