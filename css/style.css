@@ -564,7 +564,7 @@
     background-color: #daf8d4;
 }
 .section {
-    padding-top: 4rem;
+    padding-top: 2rem;
     padding-bottom: 4rem;
 }
 .sec-features .feature [class^="bi-"] {
@@ -592,18 +592,6 @@
 
 
 /* Blog */
-.col-lg-8 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-    width: 66.66667%;
-}
-.col-lg-4 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-    width: 33.33333%;
-}
 .posts-entry .blog-entry-search-item {
     margin-bottom: 30px;
 }
@@ -740,6 +728,39 @@
     background: #116e4a;
     color: #fff;
 }
+.comment-list {
+    padding: 0;
+    margin: 0;
+}
+.comment-list li {
+    padding: 0;
+    margin: 0 0 30px 0;
+    float: left;
+    width: 100%;
+    clear: both;
+    list-style: none;
+}
+.comment-list li .vcard {
+    width: 80px;
+    float: left;
+}
+.comment-list li .vcard img {
+    width: 50px;
+    border-radius: 50%;
+}
+.comment-list li .comment-body {
+    float: right;
+    width: calc(100% - 80px);
+}
+.comment-list li .comment-body h3, .comment-list li .comment-body .h3 {
+    font-size: 20px;
+    color: #000;
+}
+img, svg {
+    vertical-align: middle;
+}
+/* Blog single */
+
 
 /*** Footer Start 
 .footer .footer-item .btn-link {
@@ -756,6 +777,8 @@
     line-height: 35px;
 }***/
 /* about us */
+
+
 
 
 /*** Footer End ***/
