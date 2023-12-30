@@ -152,10 +152,10 @@
                 </div>
                   <div class="col-lg-7">
                       <form action="" class="">
-                          <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Tên của bạn">
-                          <input type="email" class="w-100 form-control border-0 py-3 mb-4" placeholder=" Email của bạn">
-                          <textarea class="w-100 form-control border-0 mb-4" rows="5" cols="10" placeholder="Nội dung"></textarea>
-                          <button class="w-100 btn form-control border-secondary py-3 bg-white text-primary " type="submit">Gửi đi</button>
+                          <input type="text" class="w-100 form-control border-secondary border-1 py-3 mb-4" placeholder="Tên của bạn" required>
+                          <input type="email" class="w-100 form-control border-secondary border-1 py-3 mb-4" placeholder=" Email của bạn" required>
+                          <textarea class="w-100 form-control border-secondary border-1 mb-4" rows="5" cols="10" placeholder="Nội dung" required></textarea>
+                          <button id = "guidi" class="w-100 btn form-control border-secondary py-3 bg-white text-primary " type="submit">Gửi đi</button>
                       </form>
                   </div>
                   <div class="col-lg-5">
@@ -277,6 +277,12 @@
 
 <!-- Template Javascript -->
 <script src="js/main.js"></script>
+<script>
+  var guidi = document.getElementById('guidi'); 
+  guidi.addEventListener('click', function(){
+    alert("Cảm ơn bạn đã liên hệ với chúng tôi!"); 
+  })
+</script>
 </body>
 
 </html>
