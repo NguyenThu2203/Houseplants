@@ -673,6 +673,11 @@
     display: -ms-flexbox !important;
     display: flex !important;
 }
+.img-link:hover img {
+    transform: scale(1.1); /* Kích thước ảnh tăng lên 10% khi di chuột vào */
+    transition: transform 0.3s ease; /* Hiệu ứng chuyển động mềm mại trong 0.3 giây */
+}
+
 .posts-entry .blog-entry-search-item .img-link img {
     margin-bottom: 0;
     border-radius: 10px;
@@ -687,6 +692,10 @@
     display: inline-block;
     border-radius: 10px;
     margin-bottom: 10px;
+}
+.post-entry-sidebar li:hover img {
+    transform: scale(1.1); /* Kích thước ảnh tăng lên 10% khi di chuột vào */
+    transition: transform 0.3s ease; /* Hiệu ứng chuyển động mềm mại trong 0.3 giây */
 }
 
 .sidebar {
@@ -789,6 +798,22 @@
     color: gray;
     background: #f2f2f2;
 }
+.categories li span,
+.tags li span {
+    transition: color 0.3s ease; /* Hiệu ứng chuyển động mềm mại trong 0.3 giây */
+}
+.categories li:hover span,
+.tags li:hover span {
+    color: #116e4a; /* Màu số khi di chuột vào mục */
+}
+ .tags li {
+        transition: background-color 0.3s ease, color 0.3s ease; /* Hiệu ứng chuyển động mềm mại trong 0.3 giây */
+    }
+
+    .tags li a:hover {
+        background: #116e4a; ; /* Màu nền xanh lá khi di chuột vào mục */
+        color: #ffffff; /* Màu chữ trắng khi di chuột vào mục */
+    }
 .custom-pagination span, .custom-pagination a {
     text-align: center;
     display: inline-block;
