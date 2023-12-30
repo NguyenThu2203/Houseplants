@@ -159,9 +159,9 @@
                                                <!-- select option -->
                                                <select class="form-select">
                                                   <option selected="">Sắp xếp: Mặc định</option>
-                                                  <option value="Low to High">Giá: Từ thấp đến cao</option>
-                                                  <option value="High to Low">Giá: Từ thấp đến cao</option>
-                                                  <option value="Avg. Rating">Đánh giá cao</option>
+                                                  <option id = "thapdencao" value="Low to High">Giá: Từ thấp đến cao</option>
+                                                  <option id = "caodenthap" value="High to Low">Giá: Từ cao đến thấp</option>
+                                                  <option id = "danhgiacao" value="Avg. Rating">Đánh giá cao</option>
                                                </select>
                                             </div>
                                 </div>
@@ -224,19 +224,19 @@
                                         <div class="mb-3">
                                             <h4>Lựa chọn khác</h4>
                                             <div class="mb-2">
-                                                <input type="radio" class="me-2" id="Categories-1" name="Categories-1" value="Beverages">
+                                                <input type="radio" class="me-2" id="spmoi" name="Categories-1" value="Beverages">
                                                 <label for="Categories-1">Mới nhất</label>
                                             </div>
                                             <div class="mb-2">
-                                                <input type="radio" class="me-2" id="Categories-2" name="Categories-1" value="Beverages">
+                                                <input type="radio" class="me-2" id="sale" name="Categories-1" value="Beverages">
                                                 <label for="Categories-2"> Giảm Giá</label>
                                             </div>
                                             <div class="mb-2 ">
-                                                <input type="radio" class="me-2" id="Categories-3" name="Categories-1" value="banchay">
+                                                <input type="radio" class="me-2" id="banchay" name="Categories-1" value="banchay">
                                                 <label for="Categories-3"> Bán Chạy</label>
                                             </div>
                                             <div class="mb-2">
-                                                <input type="radio" class="me-2" id="Categories-4" name="Categories-1" value="Beverages">
+                                                <input type="radio" class="me-2" id="suutap" name="Categories-1" value="Beverages">
                                                 <label for="Categories-4"> Bộ sưu tập</label>
                                             </div>
                                            
@@ -315,9 +315,9 @@
                             </div>
       <!----------------khối sản phẩm------------------------------------------------------>
                     <div class="col-lg-9">
-                                 <div class="row g-4 row-cols-xl-4 row-cols-lg-3 row-cols-2 row-cols-md-2 mt-2">
+                                 <div class="row g-4 row-cols-xl-4 row-cols-lg-3 row-cols-2 ban row-cols-md-2 mt-2">
                                     <!-- col -->
-                                    <div class="col danhgia">
+                                    <div class="col danhgia ban giam">
                                        <!-- card -->
                                        <div class="card card-product">
                                           <div class="card-body">
@@ -351,7 +351,7 @@
                                              <!-- price -->
                                              <div class="d-flex justify-content-between align-items-center mt-3">
                                                 <div>
-                                                   <span class="text-dark">110.000</span><sup><small>đ</small></sup>
+                                                   <span class="text-dark" class = "gia">110.000</span><sup><small>đ</small></sup>
                                                    <span class="text-decoration-line-through text-muted">120.000<sup><small>đ</small></sup></span>
                                                 </div>
                                                 <!-- btn -->
@@ -366,7 +366,7 @@
                                     </div>
                                     
                                     <!-- col -->
-                                    <div class="col">
+                                    <div class="col ban giam moi">
                                        <!-- card -->
                                        <div class="card card-product">
                                           <div class="card-body">
@@ -400,7 +400,7 @@
                                              <!-- price -->
                                              <div class="d-flex justify-content-between align-items-center mt-3">
                                                 <div class = "col-sm-7">
-                                                   <span class="text-dark">150.000<sup><small>đ</small></sup></span>
+                                                   <span class="text-dark" class = "gia">150.000<sup><small>đ</small></sup></span>
                                                    <span class="text-decoration-line-through text-muted">158.000<sup><small>đ</small></sup></span>
                                                 </div>
                                                 <!-- btn -->
@@ -414,12 +414,15 @@
                                        </div>
                                     </div>
                                     <!-- col -->
-                                    <div class="col danhgia">
+                                    <div class="col danhgia bosuutap ban moi">
                                        <!-- card -->
                                        <div class="card card-product">
                                           <div class="card-body">
                                              <!-- badge -->
                                              <div class="text-center position-relative">
+                                                <div class="position-absolute top-0">
+                                                   <span class="badge bg-danger">Mới!</span>
+                                                </div>
                                                 <a href="hoathanleo.html"><img src="trangchu/hoathanthao/Hoa lan/HT_Orchid1.jpg" alt="Hoa Lan Tím" class="mb-3 img-fluid anhsanpham"></a>
                                              </div>
                                              <!-- heading -->
@@ -441,7 +444,7 @@
                                              <!-- price -->
                                              <div class="d-flex justify-content-between align-items-center mt-3">
                                                 <div class = "col-sm-7">
-                                                   <span class="text-dark">130.000<sup><small>đ</small></sup></span>
+                                                   <span class="text-dark" class = "gia">130.000<sup><small>đ</small></sup></span>
                                                 </div>
                                                 <!-- btn -->
                                                 <div class = "col-sm-5">
@@ -454,12 +457,15 @@
                                        </div>
                                     </div>
                                     <!-- col -->
-                                    <div class="col">
+                                    <div class="col bosuutap ban moi">
                                        <!-- card -->
                                        <div class="card card-product">
                                           <div class="card-body">
                                              <!-- badge -->
                                              <div class="text-center position-relative">
+                                                <div class="position-absolute top-0">
+                                                   <span class="badge bg-danger">Mới!</span>
+                                                </div>
                                                 <a href="caythongNortfolk.html">
                                                    <!-- img -->
                                                    <img src="trangchu/caylakim/CK_nortfolk.jpg" alt="Cây Nortfork" class="mb-3 img-fluid anhsanpham">
@@ -484,7 +490,7 @@
                                              <!-- price -->
                                              <div class="d-flex justify-content-between align-items-center mt-3">
                                                 <div class = "col-sm-7">
-                                                   <span class="text-dark">150.000<sup><small>đ</small></sup></span>
+                                                   <span class="text-dark" class ="gia">150.000<sup><small>đ</small></sup></span>
                                                 </div>
                                                 <!-- btn -->
                                                 <div class = "col-sm-5">
@@ -497,7 +503,7 @@
                                        </div>
                                     </div>
                                     <!-- col -->
-                                    <div class="col danhgia">
+                                    <div class="col danhgia ban bosuutap giam">
                                        <!-- card -->
                                        <div class="card card-product">
                                           <div class="card-body">
@@ -540,7 +546,7 @@
                                        </div>
                                     </div>
                                     <!-- col -->
-                                    <div class="col danhgia">
+                                    <div class="col danhgia giam bosuutap">
                                        <!-- card -->
                                        <div class="card card-product">
                                           <div class="card-body">
@@ -587,12 +593,15 @@
                                        </div>
                                     </div>
                                     <!-- col -->
-                                    <div class="col danhgia">
+                                    <div class="col moi danhgia bosuutap">
                                        <!-- card -->
                                        <div class="card card-product">
                                           <div class="card-body">
                                              <!-- badge -->
                                              <div class="text-center position-relative">
+                                                <div class="position-absolute top-0">
+                                                   <span class="badge bg-danger">Mới!</span>
+                                                </div>
                                                 <a href="cayhuyhoang.html"><img src="trangchu/caylakim/CK_cat.jpg" class="mb-3 img-fluid anhsanpham"></a>
                                              </div>
                                              <!-- heading -->
@@ -627,12 +636,15 @@
                                           </div>
                                        </div>
                                     <!-- col -->
-                                    <div class="col">
+                                    <div class="col moi giam ban bosuutap">
                                        <!-- card -->
                                        <div class="card card-product">
                                           <div class="card-body">
                                              <!-- badge -->
                                              <div class="text-center position-relative">
+                                                <div class="position-absolute top-0">
+                                                   <span class="badge bg-danger">Mới!</span>
+                                                </div>
                                                 <a href="hoadangtieu.html"><img src="trangchu/caylakim/CK_dried.jpg" alt="Hoa Khô trang trí" class="mb-3 img-fluid anhsanpham"></a>
                                              </div>
                                              <!-- heading -->
@@ -669,10 +681,13 @@
                                     <!-- col -->
                                     <div class="col">
                                        <!-- card -->
-                                       <div class="card card-product">
+                                       <div class="card card-product moi ban bosuutap">
                                           <div class="card-body">
                                              <!-- badge -->
                                              <div class="text-center position-relative">
+                                                <div class="position-absolute top-0">
+                                                   <span class="badge bg-danger">Mới!</span>
+                                                </div>
                                                 <a href="hoalinhlan.html"><img src="trangchu/hoathanthao/Hoa cúc/HT_hoacuc.jpg" alt="Hoa Cúc vàng" class="mb-3 img-fluid anhsanpham"></a>
                                              </div>
                                              <!-- heading -->
@@ -708,12 +723,15 @@
                                        </div>
                                     </div>
                                     <!-- col -->
-                                    <div class="col">
+                                    <div class="col giam ban moi bosuutap">
                                        <!-- card -->
                                        <div class="card card-product">
                                           <div class="card-body">
                                              <!-- badge -->
                                              <div class="text-center position-relative">
+                                                <div class="position-absolute top-0">
+                                                   <span class="badge bg-danger">Giảm 5%</span>
+                                                </div>
                                                 <a href="caythongNortfolk.html"><img src="trangchu/caylakim/CK_ponytail.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid"></a>
                                              </div>
                                              <!-- heading -->
@@ -735,6 +753,7 @@
                                              <div class="d-flex justify-content-between mt-4">
                                                 <div class = "col-sm-7">
                                                    <span class="text-dark">210.000<sup><small>đ</small></sup></span>
+                                                   <span class="text-dark"><del>210.000</del><sup><small>đ</small></sup></span>
                                                 </div>
                                                 <!-- btn -->
                                                 <div class = "col-sm-5">
@@ -746,7 +765,7 @@
                                           </div>
                                        </div>
                                     </div>
-                                    <div class="col">
+                                    <div class="col ban giam moi">
                                        <!-- card -->
                                        <div class="card card-product">
                                           <div class="card-body">
@@ -784,12 +803,13 @@
                                           </div>
                                        </div>
                                     </div>
-                                    <div class="col">
+                                    <div class="col bosuutap giam moi">
                                        <!-- card -->
                                        <div class="card card-product">
                                           <div class="card-body">
                                              <!-- badge -->
                                              <div class="text-center position-relative">
+                                             
                                                 <a href="#"><img src="trangchu/caylakim/CK_parlor.jpg" alt="Grocery Ecommerce Template" class="mb-3 img-fluid"></a>
                                              </div>
                                              <!-- heading -->
@@ -1033,6 +1053,8 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="js/themvaogiohang.js"></script>
+    <script src="js/sort.js"></script>
+    <script src="js/sapxep.js"></script>
 
     <script>
       function momodal(){
