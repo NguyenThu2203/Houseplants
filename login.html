@@ -69,7 +69,7 @@
 									<a class="forgot-password" href="#">Lấy lại mật khẩu</a>
 								</div>
 								<div class="form-group mb-3">
-									<button type="submit" class="btn submit">Đăng nhập</button>
+									<button id = "dangnhap" type="submit" class="btn submit">Đăng nhập</button>
 								</div>
 							</form>
 						</div>
@@ -91,5 +91,11 @@
 		</div>
 	</section>
 </body>
+<script>
+	var dangnhap = document.getElementById('dangnhap'); 
+	dangnhap.addEventListener('click', function(){
+		alert('Đăng nhập thành công'); 
+	})
+</script>
 </html>
 
