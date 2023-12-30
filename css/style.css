@@ -650,8 +650,11 @@
     border-radius: 50%;
     background: rgba(77, 76, 125, 0.1);
 }
-
-
+/* CSS cho các phần tử h3 và icon */
+.feature:hover h3 {
+    font-weight: bold;
+    font-size: 4 em; /* Điều chỉnh kích thước font nếu cần thiết */
+  }
 /* Blog */
 .col-lg-8 {
     -webkit-box-flex: 0;
@@ -1089,5 +1092,3 @@
         top: 10px;
         right: 10px;
     }
-
-
